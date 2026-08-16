@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "updatedAt": "2026-08-17T01:05:00+09:00",
+  "version": 5,
+  "updatedAt": "2026-08-16T18:15:34.908Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -16,7 +16,6 @@
       "tel": "1660-1010",
       "memo": "ジェントルモンスターのデザートブランド。営業 11:00〜21:00。**一応8/23に予約済みだが、行けたら前半（8/17・8/18の聖水めぐり）に行きたい。**前半に行けたらこの予約は取り直し／キャンセルを検討。"
     },
-
     {
       "id": "wish-rafre",
       "type": "food",
@@ -53,7 +52,6 @@
       "naverUrl": "https://naver.me/GmpY6EAQ",
       "memo": "**結局ここのユッケビビンバと肉がいちばん美味しい**（友人おすすめ）。24時間営業・個室あり。予約は直接電話か AutoReserve などの代行。予約なしでウェイティングして入る人も多い人気店。"
     },
-
     {
       "id": "wish-yul",
       "type": "food",
@@ -141,7 +139,6 @@
       "url": "https://app.catchtable.co.kr/ct/shop/dosanjeongyuk_black",
       "memo": "**焼肉。ここもサイドメニューが美味しい**（友人おすすめ）。予約は CatchTable から。"
     },
-
     {
       "id": "wish-onjisim",
       "type": "food",
@@ -203,7 +200,6 @@
       "naverUrl": "https://naver.me/5o0LeMRc",
       "memo": "🍝 パスタ系。**17:00までだとキティちゃんのパンケーキがあってかわいい**（友人おすすめ）。⚠️ 龍山なので江南からは離れています。行くなら早い時間に。"
     },
-
     {
       "id": "wish-london-bagel",
       "type": "food",
@@ -236,6 +232,20 @@
       "place": "",
       "mapQuery": "스케줄 카페 서울",
       "memo": "⚠️ 店舗を特定できませんでした。おすすめ画像にも載っていません。地図が違う場所を指したら、このカードを編集して検索ワードを直してください。"
+    },
+    {
+      "id": "extra-msw4l2eg-mrkw",
+      "type": "food",
+      "genre": "韓国料理",
+      "date": "",
+      "when": "",
+      "time": "",
+      "title": "オダリチプカンジャンケジャン江南直営店",
+      "place": "韓国 Seoul, Gangnam District, Nonhyeon-ro 94-gil, ７ 2층",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
     }
   ]
 }
