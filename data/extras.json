@@ -1,0 +1,241 @@
+{
+  "version": 4,
+  "updatedAt": "2026-08-17T01:05:00+09:00",
+  "events": [
+    {
+      "id": "extra-nudake",
+      "type": "food",
+      "genre": "カフェ",
+      "date": "2026-08-23",
+      "time": "18:00",
+      "when": "前半",
+      "title": "NUDAKE Tea House（누데이크 티 하우스）",
+      "place": "城東区 トゥクソムロ433　HAUS NOWHERE 聖水 5階",
+      "mapQuery": "누데이크 티하우스 서울 성동구 뚝섬로 433",
+      "url": "https://app.catchtable.co.kr/ct/shop/nudake_teahouse",
+      "tel": "1660-1010",
+      "memo": "ジェントルモンスターのデザートブランド。営業 11:00〜21:00。**一応8/23に予約済みだが、行けたら前半（8/17・8/18の聖水めぐり）に行きたい。**前半に行けたらこの予約は取り直し／キャンセルを検討。"
+    },
+
+    {
+      "id": "wish-rafre",
+      "type": "food",
+      "genre": "カフェ",
+      "date": "",
+      "when": "前半",
+      "title": "ラフレフルーツ 聖水店（RAFRE FRUIT）",
+      "place": "城東区 ソウルの森2キル 8-8 2階（トゥクソム駅8番出口 徒歩10分）",
+      "mapQuery": "RAFRE FRUIT 서울숲2길 8-8",
+      "memo": "高級フルーツのデザート専門カフェ。済州アップルマンゴーのかき氷が看板。営業 月〜金 13:00〜19:00／土日 13:00〜20:00。**13:00開店** なので午前に行っても閉まっている。NUDAKEと合わせて聖水でウェイティング状況を見る。"
+    },
+    {
+      "id": "wish-baekgodong",
+      "type": "food",
+      "genre": "韓国料理",
+      "date": "",
+      "when": "前半",
+      "title": "ベッゴドン／ペッコドン（뱃고동）",
+      "place": "江南区 彦州路172キル54 B1F（新沙洞663・狎鴎亭ロデオ）",
+      "mapQuery": "뱃고동 서울 강남구 언주로172길 54",
+      "naverUrl": "https://naver.me/GQGAxElM",
+      "tel": "+82-2-514-8008",
+      "memo": "🐙 **辛いのが好きならタコがまじで美味しい。〆のポックンパも絶対頼むべき**（友人おすすめ）。営業 11:30〜21:30（L.O.21:00）。**予約は直接電話のみ**（+82-2-514-8008）。コネスト等では予約不可と出るが、電話か直接来店が基本。"
+    },
+    {
+      "id": "wish-yeongcheon",
+      "type": "food",
+      "genre": "焼肉",
+      "date": "",
+      "when": "前半",
+      "title": "ヨンチョンヨンファ 清潭店（영천영화）",
+      "place": "江南区 清潭洞 50-13",
+      "mapQuery": "영천영화 서울 강남구 청담동 50-13",
+      "naverUrl": "https://naver.me/GmpY6EAQ",
+      "memo": "**結局ここのユッケビビンバと肉がいちばん美味しい**（友人おすすめ）。24時間営業・個室あり。予約は直接電話か AutoReserve などの代行。予約なしでウェイティングして入る人も多い人気店。"
+    },
+
+    {
+      "id": "wish-yul",
+      "type": "food",
+      "genre": "焼肉",
+      "date": "",
+      "when": "後半",
+      "title": "焼肉店ヨル（고깃집열）",
+      "place": "瑞草区 瑞草洞 1330-14（江南駅）",
+      "mapQuery": "고깃집열 서울 서초구 서초동 1330-14",
+      "naverUrl": "https://naver.me/5xgXfx3p",
+      "url": "https://www.instagram.com/bbqyul_official/",
+      "memo": "サムギョプサルの店。**ニンニクそばがめちゃくちゃ美味しい**（友人おすすめ）。⚠️ 週末は混むので **キャッチテーブル（CatchTable）から予約推奨**。NAVER予約は非対応。夜のピーク（18:00頃）は枠が埋まりやすいので早めに。日曜定休。"
+    },
+    {
+      "id": "wish-kkupdang",
+      "type": "food",
+      "genre": "焼肉",
+      "date": "",
+      "when": "後半",
+      "title": "クッタン 新沙店（꿉당）",
+      "place": "瑞草区 江南大路615（新沙駅5番出口 徒歩1分）",
+      "mapQuery": "꿉당 신사 강남대로 615",
+      "memo": "熟成豚肉の焼肉。ミシュラン ビブグルマン。月〜金 15:00〜22:50、土日祝 14:00〜22:50（L.O.22:20）。看板は数量限定の「クッサル」。"
+    },
+    {
+      "id": "wish-chowon",
+      "type": "food",
+      "genre": "焼肉",
+      "date": "",
+      "when": "後半",
+      "title": "Chowon 島山大路店（초원）",
+      "place": "江南区 島山大路232 1階（鶴洞駅から約0.5km）",
+      "mapQuery": "초원 도산대로 232",
+      "tel": "+82-10-9913-5949",
+      "memo": "韓牛の焼肉・牛タン。24時間営業・予約可。White Linen House から歩ける距離。"
+    },
+    {
+      "id": "wish-bornyon",
+      "type": "food",
+      "genre": "コース料理",
+      "date": "",
+      "when": "後半",
+      "title": "bornyon seoul（본연）",
+      "place": "江南区 論峴路742 7階",
+      "mapQuery": "본연 bornyon 논현로 742",
+      "url": "https://www.bornyon.com/",
+      "tel": "+82-10-6604-0907",
+      "memo": "薪火と発酵の韓国料理コース。テラスと夜景あり。要予約（CatchTable または WhatsApp）。"
+    },
+    {
+      "id": "wish-sinsa-gopchang",
+      "type": "food",
+      "genre": "ホルモン",
+      "date": "",
+      "when": "後半",
+      "title": "シン舎牛ホルモン 新沙本店（신사소곱창）",
+      "place": "江南区 新沙洞 512-10（カロスキル・新沙駅）",
+      "mapQuery": "신사소곱창 서울 강남구 신사동 512-10",
+      "naverUrl": "https://naver.me/lx06MYAI",
+      "memo": "**ホルモンはここが1番好き。日本人にも人気**（友人おすすめ）。コプチャン・テッチャン・マクチャン。11:00〜翌01:00（L.O.24:10）、⚠️ 日曜定休。White Linen House からすぐ。"
+    },
+    {
+      "id": "wish-saebyeokjip",
+      "type": "food",
+      "genre": "焼肉",
+      "date": "",
+      "when": "後半",
+      "title": "セビョックジプ 清潭（새벽집）",
+      "place": "江南区 清潭洞 129-10",
+      "mapQuery": "새벽집 서울 강남구 청담동 129-10",
+      "naverUrl": "https://naver.me/xUZN5PPk",
+      "tel": "+82-2-546-5739",
+      "memo": "**ヨンチョンヨンファと同じで24時間。焼肉ならここも美味しい**（友人おすすめ）。韓牛の花ヒレ・ユッケビビンバ・ソンジヘジャンク。年中無休。すぐ近くに「ピープルザテラス」があるので夜カフェとセットにできる。"
+    },
+    {
+      "id": "wish-dosan-jeongyuk",
+      "type": "food",
+      "genre": "焼肉",
+      "date": "",
+      "when": "後半",
+      "title": "トサン精肉 清潭本店（도산정육）",
+      "place": "江南区 新沙洞 657-1",
+      "mapQuery": "도산정육 서울 강남구 신사동 657-1",
+      "naverUrl": "https://naver.me/50B9nyru",
+      "url": "https://app.catchtable.co.kr/ct/shop/dosanjeongyuk_black",
+      "memo": "**焼肉。ここもサイドメニューが美味しい**（友人おすすめ）。予約は CatchTable から。"
+    },
+
+    {
+      "id": "wish-onjisim",
+      "type": "food",
+      "genre": "カフェ",
+      "date": "",
+      "when": "",
+      "title": "オンジシム（온지심）",
+      "place": "鍾路区 敦義洞 21（益善洞エリア）",
+      "mapQuery": "온지심 서울 종로구 돈의동 21",
+      "naverUrl": "https://naver.me/xWI8S46i",
+      "url": "https://m.place.naver.com/restaurant/1384003744/home",
+      "memo": "🥯 **韓国にベーグル屋は沢山あるが、ここのベーグルは本当に美味しい**（友人おすすめ）。江南から地下鉄で30分ほど、鍾路（益善洞）。他の店とはエリアが違うので、鍾路方面に出る日にまとめるとよい。"
+    },
+    {
+      "id": "wish-people-terrace",
+      "type": "food",
+      "genre": "カフェ",
+      "date": "",
+      "when": "",
+      "title": "ピープルザテラス",
+      "place": "江南区 清潭洞 118-19",
+      "mapQuery": "서울 강남구 청담동 118-19",
+      "naverUrl": "https://naver.me/GWWTugUS",
+      "memo": "🌙 **夜カフェがお洒落でおすすめ**（友人おすすめ）。セビョックジプ清潭のすぐ近くなので、焼肉のあとの2軒目にちょうどいい。"
+    },
+    {
+      "id": "wish-gongku",
+      "type": "food",
+      "genre": "パスタ・洋食",
+      "date": "",
+      "when": "",
+      "title": "コンク 狎鴎亭本店",
+      "place": "江南区 新沙洞 661-4",
+      "mapQuery": "서울 강남구 신사동 661-4",
+      "naverUrl": "https://naver.me/xnO8b7Jp",
+      "memo": "🍝 **パスタ系を食べるならこの辺**（友人おすすめ）。狎鴎亭。クチョルロテラチャ・ハウスガレージと同じ流れで勧められたお店。"
+    },
+    {
+      "id": "wish-terrazza",
+      "type": "food",
+      "genre": "パスタ・洋食",
+      "date": "",
+      "when": "",
+      "title": "クチョルロテラチャ",
+      "place": "江南区 清潭洞 90-25",
+      "mapQuery": "서울 강남구 청담동 90-25",
+      "naverUrl": "https://naver.me/58qImKl0",
+      "memo": "🍝 **パスタ系を食べるならこの辺**（友人おすすめ）。清潭洞。"
+    },
+    {
+      "id": "wish-house-garage",
+      "type": "food",
+      "genre": "パスタ・洋食",
+      "date": "",
+      "when": "",
+      "title": "ハウスガレージ",
+      "place": "龍山区 龍山洞二街 22-9",
+      "mapQuery": "서울 용산구 용산동2가 22-9",
+      "naverUrl": "https://naver.me/5o0LeMRc",
+      "memo": "🍝 パスタ系。**17:00までだとキティちゃんのパンケーキがあってかわいい**（友人おすすめ）。⚠️ 龍山なので江南からは離れています。行くなら早い時間に。"
+    },
+
+    {
+      "id": "wish-london-bagel",
+      "type": "food",
+      "genre": "カフェ",
+      "date": "",
+      "when": "",
+      "title": "ロンドンベーグルミュージアム（런던베이글뮤지엄）",
+      "place": "ソウル市内に複数店舗（安国・島山・蚕室・汝矣島など）",
+      "mapQuery": "런던베이글뮤지엄",
+      "memo": "行列必至の人気ベーグル店。**複数店舗あるので、地図で近い店舗を選んでください。**江南から近いのは島山（도산）店。"
+    },
+    {
+      "id": "wish-onion",
+      "type": "food",
+      "genre": "カフェ",
+      "date": "",
+      "when": "",
+      "title": "ONION 聖水（어니언 성수）",
+      "place": "城東区 聖水洞（本店）",
+      "mapQuery": "어니언 성수",
+      "memo": "聖水の人気ベーカリーカフェ。**聖水めぐりの8/17・8/18に組み込みやすい。**安国・広蔵市場・汝矣島にも店舗あり。"
+    },
+    {
+      "id": "wish-schedule",
+      "type": "food",
+      "genre": "カフェ",
+      "date": "",
+      "when": "",
+      "title": "スケジュール（カフェ）",
+      "place": "",
+      "mapQuery": "스케줄 카페 서울",
+      "memo": "⚠️ 店舗を特定できませんでした。おすすめ画像にも載っていません。地図が違う場所を指したら、このカードを編集して検索ワードを直してください。"
+    }
+  ]
+}

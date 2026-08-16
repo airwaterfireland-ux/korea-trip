@@ -1,0 +1,745 @@
+{
+  "meta": {
+    "title": "韓国旅行 2026",
+    "subtitle": "ソウル・江南",
+    "startDate": "2026-08-17",
+    "endDate": "2026-08-26",
+    "passcodeSha256": "d3cf6b77fdeae5ff43871acc766c91e3bca9b7d3b3a6c8c073d1ec0751df786d"
+  },
+  "travelers": [
+    {
+      "nameJa": "高山さん",
+      "note": "パスポート番号・生年月日・入国申告番号は、iPhoneの「ファイル」アプリに入れた書類を参照"
+    },
+    {
+      "nameJa": "諸井さん",
+      "note": "同上"
+    }
+  ],
+  "airports": {
+    "NRT1": {
+      "name": "成田国際空港 第1ターミナル",
+      "short": "成田 T1",
+      "lat": 35.7719,
+      "lng": 140.3929,
+      "links": [
+        {
+          "label": "館内マップ",
+          "url": "https://www.narita-airport.jp/jp/map/"
+        },
+        {
+          "label": "発着案内",
+          "url": "https://www.narita-airport.jp/jp/flight/"
+        },
+        {
+          "label": "アクセス",
+          "url": "https://www.narita-airport.jp/jp/access/"
+        }
+      ]
+    },
+    "ICN1": {
+      "name": "仁川国際空港 第1旅客ターミナル",
+      "short": "仁川 T1",
+      "lat": 37.4602,
+      "lng": 126.4407,
+      "links": [
+        {
+          "label": "フロアマップ",
+          "url": "https://www.konest.com/contents/airport_incheon_map.html"
+        },
+        {
+          "label": "公式サイト",
+          "url": "https://www.airport.kr/sites/ap_ja/index.do"
+        }
+      ]
+    },
+    "ICN2": {
+      "name": "仁川国際空港 第2旅客ターミナル",
+      "short": "仁川 T2",
+      "lat": 37.4692,
+      "lng": 126.4505,
+      "links": [
+        {
+          "label": "フロアマップ",
+          "url": "https://www.konest.com/contents/airport_incheon2_map.html"
+        },
+        {
+          "label": "公式サイト",
+          "url": "https://www.airport.kr/sites/ap_ja/index.do"
+        }
+      ]
+    },
+    "HND3": {
+      "name": "羽田空港 第3ターミナル",
+      "short": "羽田 T3",
+      "lat": 35.5493,
+      "lng": 139.7798,
+      "links": [
+        {
+          "label": "フロアマップ",
+          "url": "https://tokyo-haneda.com/floor/"
+        },
+        {
+          "label": "発着案内",
+          "url": "https://tokyo-haneda.com/flight/"
+        }
+      ]
+    }
+  },
+  "flights": [
+    {
+      "id": "flt-out",
+      "date": "2026-08-17",
+      "time": "08:55",
+      "arriveDate": "2026-08-17",
+      "arriveTime": "11:25",
+      "title": "ZIPAIR ZG045　成田 → 仁川",
+      "airline": "ZIPAIR（ジップエア）",
+      "flightNo": "ZG045",
+      "from": "NRT1",
+      "to": "ICN1",
+      "seatClass": "エコノミー",
+      "airlineUrl": "https://www.zipair.net/ja",
+      "checkinUrl": "https://www.zipair.net/ja",
+      "guide": [
+        "【出発】成田空港 第1ターミナル **北ウイング 4階 Cカウンター** がZIPAIRのチェックイン。",
+        "スカイライナー3号が **成田空港駅 06:44着**。改札を出てエスカレーターで4階の北ウイングへ上がれば **06:50頃** にカウンター着。搭乗2時間前に間に合います。",
+        "ZIPAIRは受託手荷物の預け入れ締切が早いので、先に荷物を預けてから朝食などへ。",
+        "【到着】仁川空港 第1ターミナルに着陸。入国審査 → 手荷物受取 → 税関 の順。",
+        "e-Arrival card（電子入国申告書）は **2名とも提出済み**（8/19まで有効）なので、入国審査で紙の記入は不要。"
+      ],
+      "baggage": [
+        "身の回り品：1個（35×25×45cm以内、前の座席の下へ）",
+        "手荷物：1個（55×40×25cm以内）",
+        "※ 身の回り品＋手荷物の合計 7kg まで",
+        "受託手荷物：1個 30kg まで（三辺合計 203cm 以内）"
+      ]
+    },
+    {
+      "id": "flt-ret",
+      "date": "2026-08-26",
+      "time": "21:10",
+      "arriveDate": "2026-08-26",
+      "arriveTime": "23:30",
+      "title": "アシアナ航空 OZ178　仁川 → 羽田",
+      "airline": "アシアナ航空（Asiana Airlines）",
+      "flightNo": "OZ178",
+      "from": "ICN2",
+      "to": "HND3",
+      "seatClass": "エコノミー（クラス T）",
+      "airlineUrl": "https://flyasiana.com/C/JP/JA/index",
+      "checkinUrl": "https://flyasiana.com/C/JP/JA/index",
+      "guide": [
+        "【重要】アシアナ航空は **第2ターミナル（T2）** です。2026年1月に第1ターミナルから移転しました。T1に行かないよう注意。",
+        "目安：搭乗3時間前の **18:10** までにT2着。市内からの移動に1時間〜1時間半みておく。",
+        "江南からのアクセス例：地下鉄2号線 駅三（ヨクサム）駅などから空港リムジンバス **6020番**（04:05〜23:10、15〜25分間隔）。",
+        "空港鉄道（A'REX）を使う場合は、T1が終点ではないので **T2行き** に乗ること（T1の次がT2）。",
+        "万一T1に着いてしまったら、ターミナル間の **無料シャトルバス（所要約20分）** でT2へ移動。",
+        "【到着】羽田空港 第3ターミナル 23:30着。電車の終電は **00:10のモノレールのみ**。現実的には **深夜バス（T3 1階3番のりば・予約不可／当日券）** で、00:20発か01:00発。詳しくは下の「羽田T3 到着後 → 池袋へ帰る」カードに。"
+      ],
+      "baggage": [
+        "身の回り品：1個（40×30×20cm以内、前の座席の下へ）",
+        "手荷物：1個（三辺合計 115cm／55×40×20cm 以内）",
+        "※ 身の回り品＋手荷物の合計 10kg まで",
+        "受託手荷物：1個 23kg まで（三辺合計 158cm 以内）"
+      ]
+    }
+  ],
+  "stays": [
+    {
+      "id": "stay1",
+      "name": "ステイ ホテル カンナム",
+      "nameLocal": "강남 스테이 호텔 / Stay Hotel Gangnam",
+      "checkInDate": "2026-08-17",
+      "checkOutDate": "2026-08-20",
+      "checkInTime": "15:00〜24:00",
+      "checkOutTime": "12:00まで",
+      "roomType": "スイート（禁煙）",
+      "guests": "大人2名 ／ 1部屋・3泊",
+      "address": "15-4, Nonhyeon-ro 87-gil, Gangnam-gu, Seoul, 06236, 韓国",
+      "addressLocal": "서울특별시 강남구 논현로87길 15-4",
+      "tel": "+82-2-568-6200",
+      "lat": 37.4994,
+      "lng": 127.035467,
+      "price": "¥60,257（KRW 537,000 相当・2名分）",
+      "cancelPolicy": "予約後のキャンセルは1泊目の宿泊料金がキャンセル料。ノーショー（無断不泊）も同額。",
+      "propertyUrl": "https://www.booking.com/hotel/kr/gangnam-stay.html",
+      "notes": [
+        "最寄りは地下鉄2号線 **駅三（ヨクサム）駅**、徒歩約2分。",
+        "駅三駅と仁川国際空港を結ぶ空港リムジンバス **6020番** が 04:05〜23:10 の間、15〜25分間隔で運行。",
+        "全館Wi-Fi無料。駐車場なし。",
+        "食事は含まれません。",
+        "24時間フロント対応。両替・荷物預かりあり。",
+        "予約番号と暗証番号は、iPhoneの「ファイル」アプリに入れた **Booking.com 予約確認書** にあります。"
+      ]
+    },
+    {
+      "id": "stay2",
+      "name": "High End Luxury Room 2",
+      "nameLocal": "하이엔드 럭셔리 룸 2",
+      "checkInDate": "2026-08-20",
+      "checkOutDate": "2026-08-23",
+      "checkInTime": "16:00〜23:00",
+      "checkOutTime": "06:00〜11:00",
+      "roomType": "2ベッドルーム アパートメント（禁煙）",
+      "guests": "大人2名 ／ 1ユニット・3泊",
+      "address": "#702, 40, Seolleung-ro 92-gil, Gangnam-gu, Seoul, 06160, 韓国",
+      "addressLocal": "서울특별시 강남구 선릉로92길 40, 702호",
+      "tel": "+82-10-8893-1111",
+      "lat": 37.5061,
+      "lng": 127.052017,
+      "price": "¥102,336（KRW 912,000 相当・2名分／清掃料 KRW 100,000 込み）",
+      "cancelPolicy": "返金不可。2026年8月12日 14:55 以降のキャンセルは KRW 912,000。日程変更もできません。",
+      "propertyUrl": "https://www.booking.com/searchresults.ja.html?ss=High+End+Luxury+Room+2+Seoul",
+      "notes": [
+        "⚠️ **到着予定時刻を事前に施設へ連絡** してください（+82-10-8893-1111）。",
+        "最寄りは地下鉄2号線・水仁盆唐線 **宣陵（ソンルン）駅**、約320m。",
+        "702号室。キッチン・洗濯機付きのアパートメント。食事は付きません。",
+        "共用エリアWi-Fi無料。敷地内に事前予約制の専用駐車場あり（KRW 5,000/日）。",
+        "ヘンパーティー・スタッグパーティー（独身最後のパーティー）は禁止。",
+        "滞在中に施設へ損害を与えた場合、チェックアウト後に最大 KRW 100,000 が請求される可能性あり。",
+        "予約番号と暗証番号は、iPhoneの「ファイル」アプリに入れた **Booking.com 予約確認書** にあります。"
+      ]
+    },
+    {
+      "id": "stay3",
+      "name": "White Linen House",
+      "nameLocal": "화이트 린넨 하우스",
+      "checkInDate": "2026-08-23",
+      "checkOutDate": "2026-08-26",
+      "checkInTime": "15:00〜23:30",
+      "checkOutTime": "11:00まで",
+      "roomType": "スーペリア スイート（禁煙）",
+      "guests": "大人2名 ／ 1ユニット・3泊",
+      "address": "40, Nonhyeon-ro 149-gil, Gangnam-gu, Seoul, 06040, 韓国",
+      "addressLocal": "서울특별시 강남구 논현로149길 40",
+      "tel": "+82-10-8500-9069",
+      "lat": 37.5177,
+      "lng": 127.025267,
+      "price": "¥92,102（KRW 820,800 相当・2名分）",
+      "cancelPolicy": "キャンセル・変更・ノーショーの場合、宿泊料金の全額を負担。",
+      "propertyUrl": "https://www.booking.com/hotel/kr/modern-house-77.html",
+      "notes": [
+        "エリアは **新沙（シンサ）／カロスキル** 近く。鶴洞公園のそば。",
+        "⚠️ **到着予定時刻を事前に施設へ連絡** してください（+82-10-8500-9069）。",
+        "⚠️ チェックイン時に **写真付き身分証明書（パスポート）とクレジットカード** の提示が必要。",
+        "キッチン・洗濯機・Netflix等の動画配信サービスあり。エクストラロングベッド（2m以上）。",
+        "客室Wi-Fi無料。敷地内に事前予約制の専用駐車場あり（無料）。",
+        "屋内共用エリアではマスク着用が義務付けられています。",
+        "予約番号と暗証番号は、iPhoneの「ファイル」アプリに入れた **Booking.com 予約確認書** にあります。"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "skyliner",
+      "type": "train",
+      "date": "2026-08-17",
+      "time": "06:05",
+      "timeNote": "日暮里発",
+      "title": "スカイライナー3号　日暮里 06:05 → 成田空港 06:44",
+      "place": "日暮里駅で合流 → 京成線 スカイライナー乗り場（1号車）",
+      "details": [
+        {
+          "k": "列車",
+          "v": "スカイライナー3号（成田空港行き・終点）"
+        },
+        {
+          "k": "出発",
+          "v": "日暮里　06:05",
+          "mono": true
+        },
+        {
+          "k": "到着",
+          "v": "成田空港（第1ターミナル）　06:44",
+          "mono": true
+        },
+        {
+          "k": "座席",
+          "v": "1号車 1C席（通路側）／1号車 1D席（窓側）"
+        },
+        {
+          "k": "券番",
+          "v": "1C：015912　1D：015904",
+          "mono": true
+        },
+        {
+          "k": "人数",
+          "v": "大人2名"
+        },
+        {
+          "k": "購入額",
+          "v": "2,600円（ネットライナー券・8/12購入、同日に乗車変更あり）"
+        },
+        {
+          "k": "高山さん",
+          "v": "大塚駅 発 → JR山手線（内回り・池袋とは逆方向）で日暮里へ"
+        },
+        {
+          "k": "諸井さん",
+          "v": "要町駅 発 → 東京メトロ有楽町線で池袋、JR山手線（外回り）に乗り換えて日暮里へ"
+        }
+      ],
+      "links": [
+        {
+          "label": "スカイライナー時刻表",
+          "url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/jp/traffic/skyliner_timetable.php"
+        },
+        {
+          "label": "ネット予約の確認・購入",
+          "url": "https://skyliner.ec.keisei.co.jp/member/EAA01/GEAA01010.xhtml"
+        },
+        {
+          "label": "大塚 → 日暮里 の経路",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=%E5%A4%A7%E5%A1%9A%E9%A7%85&destination=%E6%97%A5%E6%9A%AE%E9%87%8C%E9%A7%85&travelmode=transit"
+        },
+        {
+          "label": "要町 → 日暮里 の経路",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=%E8%A6%81%E7%94%BA%E9%A7%85&destination=%E6%97%A5%E6%9A%AE%E9%87%8C%E9%A7%85&travelmode=transit"
+        },
+        {
+          "label": "京成スカイライナー 公式",
+          "url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/jp/index.php"
+        }
+      ],
+      "docIds": [
+        "skyliner-ticket"
+      ],
+      "notes": [
+        "⚠️ 購入済みなのは **ライナー券（座席指定券）のみ** です。2,600円 ＝ 1,300円 × 2名分。**乗車券（運賃）は別途必要** なので、Suica／PASMOで改札を通るか、京成の券売機できっぷを買ってください。",
+        "**05:45 ごろには日暮里の京成改札** にいるつもりで。大塚・要町からそれぞれ向かうので、合流の余裕をみておく。",
+        "日暮里ではJRの改札を出て京成線の改札へ。案内表示に従ってスカイライナー乗り場のホームへ上がります。",
+        "座席は **1号車**。ホームでの停車位置を確認してから並ぶこと。",
+        "降りるのは終点の **成田空港駅（第1ターミナル）**。ひとつ手前の「空港第2ビル」で降りないように。",
+        "06:44 着なので、ZIPAIRカウンター（北ウイング4階C）着は **06:50頃** の見込み。搭乗2時間前にちょうど間に合います。",
+        "早朝は本数が少ないので、乗り遅れるとリカバリーが効きません。"
+      ]
+    },
+    {
+      "id": "luggage-1",
+      "type": "luggage",
+      "date": "2026-08-17",
+      "time": "11:30",
+      "timeNote": "到着後",
+      "title": "LuggAgent 荷物配送（空港 → ホテル）",
+      "place": "仁川空港 第1ターミナル 1階 到着ロビー・10番出口前の柱のそば",
+      "links": [
+        {
+          "label": "集合場所の案内ページ（LuggAgent）",
+          "url": "https://mixolydian-poppyseed-a16.notion.site/ICN-Airport-T1-1cfba726d51c81a6b21ac27e1190ff1e"
+        },
+        {
+          "label": "LINEで連絡",
+          "url": "https://lin.ee/x20Wxrv"
+        },
+        {
+          "label": "WhatsAppで連絡",
+          "url": "https://wa.me/886900636964"
+        },
+        {
+          "label": "Instagramで連絡",
+          "url": "https://www.instagram.com/luggagent/"
+        },
+        {
+          "label": "空港→ホテル便の説明（公式）",
+          "url": "https://luggagent.com/products/Airport-to-Hotel-c143899781"
+        },
+        {
+          "label": "荷物の規定（公式）",
+          "url": "https://luggagent.com/products/Luggage-Regulations-c150831041"
+        }
+      ],
+      "docIds": [
+        "meetpoint-photo",
+        "meetpoint-map",
+        "luggage-service-ja",
+        "luggage-notes-ja",
+        "luggage-service",
+        "luggage-notes"
+      ],
+      "notes": [
+        "📍 集合場所は **1階の到着ロビー、10番出口の前にある柱のそば**。上の「ミートポイントの写真」と「位置図」で場所を確認できます。",
+        "🧳 **到着したら荷物の写真を撮って送る** こと。スタッフがどの荷物か素早く判別できるようになります。",
+        "荷物受取・税関を抜けて到着ロビーに出たら、天井の案内表示で出口番号をたどって **10番出口** へ。",
+        "予定時刻から **30分以上遅れると15分ごとに US$10** の待機料。**30分経っても連絡が取れないと注文キャンセル・返金なし**。遅れそうなら必ず事前連絡。",
+        "連絡は24時間対応。上の LINE / WhatsApp / Instagram のボタンからすぐ送れます（WeChat は「LuggAgent行李特工」で検索）。",
+        "ホテル配送は **サービス日の1日前まで** に「ホテルの予約者名＋予約番号」を伝える必要あり（ステイ ホテル カンナム宛。番号は予約確認書PDFを参照）。",
+        "荷物は当日 **21:00までに** ホテルへ届き、自分の名前で預かってもらえます。",
+        "荷物は必ず施錠してから預けること。保険は 1個あたり US$500 まで（取っ手・車輪の破損は対象外）。",
+        "フライトが1時間以上遅延した場合、先方の判断で注文キャンセル＋50%返金となることがあります。"
+      ],
+      "details": [
+        {
+          "k": "集合場所",
+          "v": "**国際線到着ロビー（1階）10番出口の前にある柱のそば**"
+        },
+        {
+          "k": "韓国語",
+          "v": "1층 입국장 10번 게이트 쪽 기둥 앞"
+        },
+        {
+          "k": "英語",
+          "v": "The pillar side in front of the Gate 10, International arrival - 1F"
+        }
+      ]
+    },
+    {
+      "id": "move-seongsu",
+      "type": "move",
+      "date": "2026-08-17",
+      "time": "12:00",
+      "timeNote": "入国後",
+      "title": "仁川空港からバスで聖水（ソンス）へ直行",
+      "place": "仁川空港 第1ターミナル → 聖水洞（성수동）",
+      "links": [
+        {
+          "label": "空港 → 聖水 の経路を調べる",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Incheon%20International%20Airport%20Terminal%201&destination=%EC%84%B1%EC%88%98%EB%8F%99&travelmode=transit"
+        },
+        {
+          "label": "仁川空港 リムジンバス案内",
+          "url": "https://www.airport.kr/sites/ap_ja/index.do"
+        },
+        {
+          "label": "BAGFREE（荷物預かり）",
+          "url": "https://bagfree.kr/ja/"
+        }
+      ],
+      "notes": [
+        "荷物はLuggAgentがホテルへ運んでくれるので、手ぶらで聖水へ直行できます。",
+        "バス乗り場は到着階（1階）の外。乗る前に行き先の表示を必ず確認。",
+        "所要はおおむね1時間半前後みておくと安心。",
+        "ホテル（ステイ ホテル カンナム）のチェックインは15:00〜24:00なので、聖水で遊んでから向かっても大丈夫。",
+        "荷物配送サービスに渡さない場合は、**BAGFREE** に預ける予定（上のリンク）。聖水を身軽に回るならどちらかを必ず手配すること。"
+      ]
+    },
+    {
+      "id": "plan-817",
+      "type": "plan",
+      "date": "2026-08-17",
+      "time": "13:30",
+      "title": "聖水で買い物＋カフェのウェイティング確認",
+      "place": "聖水洞（성수동）",
+      "details": [
+        {
+          "k": "やること",
+          "v": "NUDAKE Tea House か Rafre Fruit のウェイティング状況を見て、待てそうなら整理券を取る"
+        },
+        {
+          "k": "買い物",
+          "v": "オリーブヤングなど、聖水を見て回る"
+        }
+      ],
+      "links": [
+        {
+          "label": "NUDAKE Tea House（聖水）",
+          "url": "https://www.google.com/maps/search/?api=1&query=%EB%88%84%EB%8D%B0%EC%9D%B4%ED%81%AC%20%ED%8B%B0%ED%95%98%EC%9A%B0%EC%8A%A4%20%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%8F%99%EA%B5%AC%20%EB%9A%9D%EC%84%AC%EB%A1%9C%20433"
+        },
+        {
+          "label": "NUDAKE ウェイティング（CatchTable）",
+          "url": "https://app.catchtable.co.kr/ct/shop/nudake_teahouse"
+        },
+        {
+          "label": "Rafre Fruit 聖水店",
+          "url": "https://www.google.com/maps/search/?api=1&query=RAFRE%20FRUIT%20%EC%84%9C%EC%9A%B8%EC%88%B22%EA%B8%B8%208-8"
+        },
+        {
+          "label": "オリーブヤング 聖水",
+          "url": "https://www.google.com/maps/search/?api=1&query=%EC%98%AC%EB%A6%AC%EB%B8%8C%EC%98%81%20%EC%84%B1%EC%88%98"
+        },
+        {
+          "label": "ONION 聖水（어니언 성수）",
+          "url": "https://www.google.com/maps/search/?api=1&query=%EC%96%B4%EB%8B%88%EC%96%B8%20%EC%84%B1%EC%88%98"
+        }
+      ],
+      "notes": [
+        "**Rafre Fruit 聖水店**：ソウルの森2キル 8-8 2階（뚝섬駅8番出口 徒歩10分）。営業 月〜金 13:00〜19:00、土日 13:00〜20:00。",
+        "**NUDAKE Tea House**：トゥクソムロ433 HAUS NOWHERE 聖水 5階。営業 11:00〜21:00。",
+        "どちらか行けなかった方は翌18日にまわす予定。",
+        "8/23 18:00 にも NUDAKE の予約が入っています。",
+        "聖水には **ONION（어니언）** の本店もあります。「行きたい」タブにも登録済み。"
+      ]
+    },
+    {
+      "id": "plan-818",
+      "type": "plan",
+      "date": "2026-08-18",
+      "time": "11:00",
+      "timeNote": "日中",
+      "title": "引き続き聖水めぐり",
+      "place": "聖水洞（성수동）",
+      "details": [
+        {
+          "k": "やること",
+          "v": "17日に行けなかった方（NUDAKE Tea House / Rafre Fruit）のウェイティングを確認して、待てそうなら整理券を取る"
+        },
+        {
+          "k": "買い物",
+          "v": "オリーブヤングなど、聖水を見て回る"
+        }
+      ],
+      "links": [
+        {
+          "label": "NUDAKE Tea House（聖水）",
+          "url": "https://www.google.com/maps/search/?api=1&query=%EB%88%84%EB%8D%B0%EC%9D%B4%ED%81%AC%20%ED%8B%B0%ED%95%98%EC%9A%B0%EC%8A%A4%20%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%8F%99%EA%B5%AC%20%EB%9A%9D%EC%84%AC%EB%A1%9C%20433"
+        },
+        {
+          "label": "NUDAKE ウェイティング（CatchTable）",
+          "url": "https://app.catchtable.co.kr/ct/shop/nudake_teahouse"
+        },
+        {
+          "label": "Rafre Fruit 聖水店",
+          "url": "https://www.google.com/maps/search/?api=1&query=RAFRE%20FRUIT%20%EC%84%9C%EC%9A%B8%EC%88%B22%EA%B8%B8%208-8"
+        },
+        {
+          "label": "聖水 → ホテル の経路",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=%EC%84%B1%EC%88%98%EB%8F%99&destination=37.4994,127.035467&travelmode=transit"
+        },
+        {
+          "label": "ONION 聖水（어니언 성수）",
+          "url": "https://www.google.com/maps/search/?api=1&query=%EC%96%B4%EB%8B%88%EC%96%B8%20%EC%84%B1%EC%88%98"
+        }
+      ],
+      "notes": [
+        "宿は江南（駅三）なので、聖水からは地下鉄2号線が乗り換えなしで便利。"
+      ]
+    },
+    {
+      "id": "plan-819-moroi",
+      "type": "plan",
+      "date": "2026-08-19",
+      "time": "10:00",
+      "title": "諸井さん：美容整形",
+      "place": "（クリニック未登録）",
+      "notes": [
+        "10時から。クリニックの場所・連絡先が決まったら、右下の ＋ から予定を追加しておくと地図で開けます。"
+      ]
+    },
+    {
+      "id": "plan-819-takayama",
+      "type": "plan",
+      "date": "2026-08-19",
+      "time": "10:00",
+      "timeNote": "日中",
+      "title": "高山さん：ホテルで仕事",
+      "place": "ステイ ホテル カンナム",
+      "notes": [
+        "全館Wi-Fi無料。24時間フロント対応。",
+        "チェックアウトは翌8/20の12:00まで。"
+      ]
+    },
+    {
+      "id": "note-checkout-move-1",
+      "type": "note",
+      "date": "2026-08-20",
+      "time": "12:00",
+      "title": "ホテル移動：ステイ ホテル カンナム → High End Luxury Room 2",
+      "place": "駅三 → 宣陵（地下鉄2号線で1駅）",
+      "notes": [
+        "12:00までにチェックアウト。次のチェックインは16:00から。",
+        "空き時間は荷物を新しい宿かコインロッカーに預けると身軽。",
+        "High End Luxury Room 2 には到着予定時刻を事前連絡（+82-10-8893-1111）。"
+      ]
+    },
+    {
+      "id": "note-checkout-move-2",
+      "type": "note",
+      "date": "2026-08-23",
+      "time": "11:00",
+      "title": "ホテル移動：High End Luxury Room 2 → White Linen House",
+      "place": "宣陵 → 新沙／狎鴎亭エリア",
+      "notes": [
+        "11:00までにチェックアウト。次のチェックインは15:00から。",
+        "White Linen House には到着予定時刻を事前連絡（+82-10-8500-9069）。",
+        "チェックイン時にパスポートとクレジットカードを出せるように準備。",
+        "この日は18:00に NUDAKE の予約あり。"
+      ]
+    },
+    {
+      "id": "note-departure",
+      "type": "note",
+      "date": "2026-08-26",
+      "time": "18:00",
+      "title": "空港へ出発（目安）",
+      "place": "ソウル市内 → 仁川空港 第2ターミナル",
+      "lat": 37.4692,
+      "lng": 126.4505,
+      "mapQuery": "인천국제공항 제2여객터미널",
+      "notes": [
+        "21:10発のため、遅くとも 18:10 には T2 到着を目標に。",
+        "White Linen House は 11:00 チェックアウト。荷物は宿に預けるか、コインロッカーへ。",
+        "アシアナは **T2** 。空港鉄道もリムジンも行き先表示を必ず確認。"
+      ]
+    },
+    {
+      "id": "go-home",
+      "type": "move",
+      "date": "2026-08-26",
+      "time": "23:30",
+      "timeNote": "羽田着後",
+      "title": "羽田T3 到着後 → 池袋へ帰る",
+      "place": "羽田空港 第3ターミナル → 池袋",
+      "details": [
+        {
+          "k": "◎ 深夜バス2便",
+          "v": "**羽田T3 01:00発 → 池袋駅東口 02:05着**　2,800円　← 確実に間に合う"
+        },
+        {
+          "k": "○ 深夜バス1便",
+          "v": "**羽田T3 00:20発 → 池袋駅東口 01:13着**　2,800円　← 間に合えばこちら"
+        },
+        {
+          "k": "乗車券",
+          "v": "**予約不可・当日購入**。第3ターミナル1階の **バス自動券売機／バス乗車券カウンター** で乗る前に買う"
+        },
+        {
+          "k": "のりば",
+          "v": "案内表示に従い **2階アクセスホール → 1階（第3レーン）→ 3番のりば**"
+        },
+        {
+          "k": "△ 最終電車",
+          "v": "モノレール 00:10発 → 浜松町 00:26 →〔山手線内回り 00:32発〕→ 池袋 01:03着　860円"
+        },
+        {
+          "k": "深夜バス3便",
+          "v": "T3 01:40発 → 池袋駅東口 02:45着"
+        },
+        {
+          "k": "深夜バス4便",
+          "v": "T3 02:20発 → 池袋駅東口 03:25着"
+        },
+        {
+          "k": "タクシー",
+          "v": "豊島区まで定額運賃 10,000〜13,200円（車種・深夜割増による）＋首都高通行料"
+        },
+        {
+          "k": "始発電車",
+          "v": "モノレール 05:09発 → 浜松町 05:25 → 池袋 06:09着"
+        }
+      ],
+      "links": [
+        {
+          "label": "深夜早朝アクセスバス 公式時刻表",
+          "url": "https://www.limousinebus.co.jp/ja/guide/others/accessbus/"
+        },
+        {
+          "label": "羽田空港 公式：深夜早朝アクセスバス",
+          "url": "https://tokyo-haneda.com/text/access/bus/index.html"
+        },
+        {
+          "label": "リムジンバス 予約・時刻表",
+          "url": "https://www.limousinebus.co.jp/ja/timetable/"
+        },
+        {
+          "label": "羽田T3→池袋 を今すぐ検索",
+          "url": "https://transit.yahoo.co.jp/search/result?from=%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%E7%AC%AC3%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB&to=%E6%B1%A0%E8%A2%8B&type=1"
+        },
+        {
+          "label": "東京モノレール 公式",
+          "url": "https://www.tokyo-monorail.co.jp/"
+        },
+        {
+          "label": "羽田T3 フロアマップ（のりば確認）",
+          "url": "https://tokyo-haneda.com/floor/"
+        },
+        {
+          "label": "タクシー定額運賃（東京無線）",
+          "url": "https://www.tokyomusen.or.jp/flat/haneda"
+        }
+      ],
+      "notes": [
+        "🎫 **深夜バスはオンライン予約ができません。** 通常のリムジンバス（羽田→池袋は22:20発が最終）はネット予約できますが、深夜早朝アクセスバスは予約システムに載っておらず、**当日空港で乗車券を買う方式**です。座席定員制なので先着順。",
+        "🚌 **おすすめは2便（01:00発）。** 23:30着から90分あるので、入国・手荷物受取・券の購入まで余裕をもって間に合います。池袋駅東口 02:05着。",
+        "1便（00:20発）は50分しかなく、荷物の出が遅いと厳しめ。**予約が要らない＝取り逃してもペナルティなし** なので、先に券を買っておいて「間に合えば1便、無理なら2便」で問題ありません。",
+        "🎫 券を買う場所：第3ターミナル**1階のバス自動券売機またはバス乗車券カウンター**。到着ロビーを出たらまずここへ。",
+        "🚏 のりばへの行き方：案内表示に従って **2階アクセスホールから1階（第3レーン）へ降り、3番のりば**（新宿・池袋方面）。",
+        "⚠️ **00:10のモノレールを逃すと、電車は05:09の始発まで一切ありません。** 鉄道を狙うなら1本勝負になります。",
+        "⚠️ **京急には乗らないこと。** 00:08発の京急で品川に出ても、品川からの山手線内回りが終わっており、大崎で朝4:28まで足止めになります（池袋着 04:53）。",
+        "池袋駅東口に着くのは 01:13（1便）／02:05（2便）。**大塚も要町も終電後**なので、そこからは徒歩かタクシー（池袋→大塚 約2.5km／池袋→要町 約1.7km、どちらもタクシーで10分弱）。",
+        "※ 2026年8月時点の時刻です。当日は上の「今すぐ検索」ボタンと羽田空港公式で最新を確認してください。"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "id": "skyliner-ticket",
+      "title": "ネットライナー券（スカイライナー3号）",
+      "file": "docs/skyliner-ticket.png",
+      "desc": "8/17 日暮里 06:05 → 成田空港 06:44。1号車 1C席・1D席、大人2名。※乗車券（運賃）は別途必要。"
+    },
+    {
+      "id": "meetpoint-photo",
+      "title": "ミートポイントの写真（仁川T1）",
+      "file": "docs/meetpoint-icn-t1-photo.jpg",
+      "desc": "1階到着ロビー、10番出口の前の柱。黄色い枠の場所でスタッフが待っています。"
+    },
+    {
+      "id": "meetpoint-map",
+      "title": "ミートポイントの位置図（仁川T1 1階）",
+      "file": "docs/meetpoint-icn-t1-map.png",
+      "desc": "第1ターミナル1階（到着階）のフロアマップ。赤枠が集合場所。"
+    },
+    {
+      "id": "luggage-service-ja",
+      "title": "LuggAgent サービス説明（日本語訳）",
+      "file": "docs/luggage-service-ja.pdf",
+      "desc": "荷物配送の流れ・待機料・ホテル配送の条件を日本語に訳したもの。今回の予約内容も表にしてあります。"
+    },
+    {
+      "id": "luggage-notes-ja",
+      "title": "LuggAgent 注意事項・規約（日本語訳）",
+      "file": "docs/luggage-notes-ja.pdf",
+      "desc": "キャンセル料・遅延時の扱い・保険を日本語に訳したもの。金額の早見表つき。"
+    },
+    {
+      "id": "luggage-service",
+      "title": "LuggAgent サービス説明（原本・英/中）",
+      "file": "docs/luggage-service.pdf",
+      "desc": "原本。ミートポイントの地図ページは含まれていません。"
+    },
+    {
+      "id": "luggage-notes",
+      "title": "LuggAgent 注意事項・規約（原本・英/中）",
+      "file": "docs/luggage-notes.pdf",
+      "desc": "原本。1枚目に連絡用のQRコード（LINE / WhatsApp / Instagram）があります。"
+    },
+    {
+      "id": "private-note",
+      "title": "⚠️ 個人情報の書類はこのアプリに入っていません",
+      "file": "",
+      "desc": "eチケット・電子入国申告書・Booking.com予約確認書は、公開ページに置かないため除外しています。iPhoneの「ファイル」アプリ（またはメール）から開いてください。"
+    }
+  ],
+  "emergency": [
+    {
+      "label": "警察",
+      "value": "112",
+      "tel": "112"
+    },
+    {
+      "label": "消防・救急",
+      "value": "119",
+      "tel": "119"
+    },
+    {
+      "label": "観光通訳案内（24時間・日本語可）",
+      "value": "1330",
+      "tel": "+82-2-1330"
+    },
+    {
+      "label": "在大韓民国日本国大使館",
+      "value": "+82-2-2170-5200",
+      "tel": "+82-2-2170-5200"
+    },
+    {
+      "label": "Booking.com（海外・韓国から）",
+      "value": "+81-3-6743-6650",
+      "tel": "+81-3-6743-6650"
+    },
+    {
+      "label": "Booking.com（日本国内）",
+      "value": "03-6743-6650",
+      "tel": "+81-3-6743-6650"
+    }
+  ]
+}

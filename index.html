@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<title>韓国旅行 2026</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="韓国旅行">
+<meta name="theme-color" content="#12151c">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-180.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<!-- ロック画面 -->
+<div id="lock" class="lock" hidden>
+  <div class="lock-inner">
+    <div class="lock-mark">✈</div>
+    <h1 class="lock-title">韓国旅行 2026</h1>
+    <p class="lock-sub">パスコードを入力してください</p>
+    <div class="dots" id="dots"><i></i><i></i><i></i><i></i></div>
+    <p class="lock-err" id="lockErr">&nbsp;</p>
+    <div class="keypad" id="keypad">
+      <button type="button" data-k="1">1</button>
+      <button type="button" data-k="2">2</button>
+      <button type="button" data-k="3">3</button>
+      <button type="button" data-k="4">4</button>
+      <button type="button" data-k="5">5</button>
+      <button type="button" data-k="6">6</button>
+      <button type="button" data-k="7">7</button>
+      <button type="button" data-k="8">8</button>
+      <button type="button" data-k="9">9</button>
+      <span></span>
+      <button type="button" data-k="0">0</button>
+      <button type="button" data-k="del" class="kdel">⌫</button>
+    </div>
+  </div>
+</div>
+
+<!-- アプリ本体 -->
+<div id="app" hidden>
+
+  <header class="topbar">
+    <div class="topbar-main">
+      <div class="topbar-title" id="topTitle">韓国旅行 2026</div>
+      <div class="topbar-sub" id="topSub">ソウル・江南</div>
+    </div>
+    <button class="icon-btn" id="btnToday" type="button" title="今日へ">今日</button>
+  </header>
+
+  <!-- 日程ビュー -->
+  <main class="view" id="view-plan">
+    <div class="datestrip-wrap">
+      <div class="datestrip" id="datestrip"></div>
+      <button class="cal-toggle" id="calToggle" type="button" aria-expanded="false">
+        <span id="calToggleLabel">カレンダー</span> <span class="chev">▾</span>
+      </button>
+    </div>
+    <div class="calendar" id="calendar" hidden></div>
+
+    <div class="dayhead" id="dayhead"></div>
+    <div class="timeline" id="timeline"></div>
+    <div class="spacer"></div>
+  </main>
+
+  <!-- 全日程ビュー -->
+  <main class="view" id="view-all" hidden>
+    <div class="section-title">全日程</div>
+    <div id="allList"></div>
+    <div class="spacer"></div>
+  </main>
+
+  <!-- 行きたいお店（日程未定） -->
+  <main class="view" id="view-wish" hidden>
+    <div class="section-head">
+      <div class="section-title">行きたいお店</div>
+      <button type="button" class="icon-btn" id="btnFoldWish" data-open="0">すべて開く</button>
+    </div>
+    <p class="lead">カードをタップすると詳細が開きます。日付を決めても、このタブには「日程決定」として残ります。緑のバッジを押すと、その日の日程に飛べます。</p>
+    <div class="chips" id="genreChips"></div>
+    <div id="wishList"></div>
+    <div class="card">
+      <div class="card-body" style="padding-top:14px">
+        <p class="muted small">Googleマップに保存しているお店の一覧はこちらから。<br>（保存に使っているGoogleアカウントでログインしている必要があります）</p>
+        <div class="actions" style="padding:0">
+          <a class="abtn primary" href="https://www.google.com/maps/saved" target="_blank" rel="noopener">Googleマップの保存済みを開く</a>
+        </div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+  </main>
+
+  <!-- 書類ビュー -->
+  <main class="view" id="view-docs" hidden>
+    <div class="section-title">書類（PDF）</div>
+    <div id="docList"></div>
+
+    <div class="section-title">旅行者</div>
+    <div id="travelerList"></div>
+
+    <div class="section-title">緊急連絡先</div>
+    <div id="emergencyList"></div>
+    <div class="spacer"></div>
+  </main>
+
+  <!-- 設定ビュー -->
+  <main class="view" id="view-settings" hidden>
+    <div class="section-title">共有と同期</div>
+    <div class="card">
+      <div class="card-body">
+        <p class="muted small">追加したお店の予定を GitHub 上のファイルに書き込み、2台の端末で共有します。書き込みには一度だけトークンの登録が必要です（読み取りは登録なしでできます）。</p>
+        <div class="sync-status" id="syncStatus">確認中…</div>
+        <label class="field">
+          <span>GitHub ユーザー名</span>
+          <input type="text" id="cfgOwner" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="例：yourname">
+        </label>
+        <label class="field">
+          <span>リポジトリ名</span>
+          <input type="text" id="cfgRepo" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="例：korea-trip">
+        </label>
+        <label class="field">
+          <span>アクセストークン（この端末にのみ保存）</span>
+          <input type="password" id="cfgToken" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="github_pat_...">
+        </label>
+        <div class="row-btns">
+          <button class="btn btn-primary" id="btnSaveCfg" type="button">保存して接続テスト</button>
+          <button class="btn" id="btnSyncNow" type="button">今すぐ同期</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">この端末のデータ</div>
+    <div class="card">
+      <div class="card-body">
+        <div class="row-btns">
+          <button class="btn" id="btnExport" type="button">追加予定をコピー</button>
+          <button class="btn" id="btnImport" type="button">貼り付けて取り込み</button>
+        </div>
+        <div class="row-btns">
+          <button class="btn" id="btnLock" type="button">ロックする</button>
+          <button class="btn btn-danger" id="btnReset" type="button">アプリの保存データを消去</button>
+        </div>
+        <p class="muted small" id="verInfo"></p>
+      </div>
+    </div>
+    <div class="spacer"></div>
+  </main>
+
+  <!-- 追加ボタン -->
+  <button class="fab" id="fab" type="button" aria-label="予定を追加">＋</button>
+
+  <!-- 下部ナビ -->
+  <nav class="tabbar">
+    <button type="button" class="tab active" data-view="plan"><span class="ti">📅</span><span>日程</span></button>
+    <button type="button" class="tab" data-view="all"><span class="ti">🗂</span><span>全日程</span></button>
+    <button type="button" class="tab" data-view="wish"><span class="ti">⭐️</span><span>行きたい</span></button>
+    <button type="button" class="tab" data-view="docs"><span class="ti">📄</span><span>書類</span></button>
+    <button type="button" class="tab" data-view="settings"><span class="ti">⚙️</span><span>設定</span></button>
+  </nav>
+</div>
+
+<!-- 予定追加/編集シート -->
+<div class="sheet-backdrop" id="sheetBack" hidden>
+  <div class="sheet" role="dialog" aria-modal="true">
+    <div class="sheet-head">
+      <button class="link-btn" id="sheetCancel" type="button">キャンセル</button>
+      <strong id="sheetTitle">予定を追加</strong>
+      <button class="link-btn strong" id="sheetSave" type="button">保存</button>
+    </div>
+    <div class="sheet-body">
+      <label class="field">
+        <span>種類</span>
+        <select id="fType">
+          <option value="food">🍽 お店・レストラン</option>
+          <option value="spot">📍 観光・スポット</option>
+          <option value="note">📝 メモ・その他</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>店名・タイトル <em>必須</em></span>
+        <input type="text" id="fTitle" placeholder="例：明洞餃子">
+      </label>
+      <label class="field" id="genreField">
+        <span>ジャンル</span>
+        <select id="fGenre"></select>
+      </label>
+      <div class="field-row">
+        <label class="field">
+          <span>日付</span>
+          <input type="date" id="fDate" min="2026-08-17" max="2026-08-26">
+        </label>
+        <label class="field">
+          <span>時刻</span>
+          <input type="time" id="fTime">
+        </label>
+      </div>
+      <p class="hint" id="dateHint">日付を空にすると「行きたい」タブに入ります。</p>
+      <label class="field" id="whenField">
+        <span>時期の目安（「行きたい」タブでの並び）</span>
+        <select id="fWhen">
+          <option value="">指定なし</option>
+          <option value="前半">日程前半</option>
+          <option value="後半">日程後半</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>場所・住所</span>
+        <input type="text" id="fPlace" placeholder="例：ソウル特別市 中区 明洞10ギル 10">
+      </label>
+      <label class="field">
+        <span>地図の検索ワード</span>
+        <input type="text" id="fMapQuery" placeholder="空欄なら「店名＋場所」で検索します">
+      </label>
+      <label class="field">
+        <span>サイト・予約ページ URL</span>
+        <input type="url" id="fUrl" autocapitalize="off" placeholder="https://...">
+      </label>
+      <label class="field">
+        <span>電話番号</span>
+        <input type="tel" id="fTel" placeholder="+82-2-...">
+      </label>
+      <label class="field">
+        <span>メモ</span>
+        <textarea id="fMemo" rows="3" placeholder="予約名義、人数、注意点など"></textarea>
+      </label>
+      <button class="btn btn-danger wide" id="fDelete" type="button" hidden>この予定を削除</button>
+      <div class="spacer-sm"></div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>

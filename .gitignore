@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+._*
+
+# 作業用
+.playwright-mcp/
+*.log
+
+# 機密情報を含む書類は公開しない（iPhoneの「ファイル」アプリで持ち歩く）
+private-docs/
