@@ -1,6 +1,6 @@
 {
-  "version": 5,
-  "updatedAt": "2026-08-16T18:15:34.908Z",
+  "version": 6,
+  "updatedAt": "2026-08-17T09:37:18.269Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -44,12 +44,14 @@
       "id": "wish-yeongcheon",
       "type": "food",
       "genre": "焼肉",
-      "date": "",
+      "date": "2026-08-17",
       "when": "前半",
+      "time": "19:00",
       "title": "ヨンチョンヨンファ 清潭店（영천영화）",
       "place": "江南区 清潭洞 50-13",
       "mapQuery": "영천영화 서울 강남구 청담동 50-13",
-      "naverUrl": "https://naver.me/GmpY6EAQ",
+      "url": "",
+      "tel": "",
       "memo": "**結局ここのユッケビビンバと肉がいちばん美味しい**（友人おすすめ）。24時間営業・個室あり。予約は直接電話か AutoReserve などの代行。予約なしでウェイティングして入る人も多い人気店。"
     },
     {
