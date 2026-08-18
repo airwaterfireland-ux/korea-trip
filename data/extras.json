@@ -1,14 +1,14 @@
 {
-  "version": 6,
-  "updatedAt": "2026-08-17T09:37:18.269Z",
+  "version": 7,
+  "updatedAt": "2026-08-18T07:14:39.018Z",
   "events": [
     {
       "id": "extra-nudake",
       "type": "food",
       "genre": "カフェ",
-      "date": "2026-08-23",
-      "time": "18:00",
+      "date": "2026-08-18",
       "when": "前半",
+      "time": "12:00",
       "title": "NUDAKE Tea House（누데이크 티 하우스）",
       "place": "城東区 トゥクソムロ433　HAUS NOWHERE 聖水 5階",
       "mapQuery": "누데이크 티하우스 서울 성동구 뚝섬로 433",
