@@ -1,6 +1,6 @@
 {
-  "version": 8,
-  "updatedAt": "2026-08-18T07:14:58.043Z",
+  "version": 9,
+  "updatedAt": "2026-08-18T07:15:15.834Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -61,13 +61,14 @@
       "id": "wish-yul",
       "type": "food",
       "genre": "焼肉",
-      "date": "",
+      "date": "2026-08-18",
       "when": "後半",
+      "time": "14:00",
       "title": "焼肉店ヨル（고깃집열）",
       "place": "瑞草区 瑞草洞 1330-14（江南駅）",
       "mapQuery": "고깃집열 서울 서초구 서초동 1330-14",
-      "naverUrl": "https://naver.me/5xgXfx3p",
       "url": "https://www.instagram.com/bbqyul_official/",
+      "tel": "",
       "memo": "サムギョプサルの店。**ニンニクそばがめちゃくちゃ美味しい**（友人おすすめ）。⚠️ 週末は混むので **キャッチテーブル（CatchTable）から予約推奨**。NAVER予約は非対応。夜のピーク（18:00頃）は枠が埋まりやすいので早めに。日曜定休。"
     },
     {
