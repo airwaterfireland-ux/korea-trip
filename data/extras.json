@@ -1,6 +1,6 @@
 {
-  "version": 9,
-  "updatedAt": "2026-08-18T07:15:15.834Z",
+  "version": 10,
+  "updatedAt": "2026-08-18T07:15:50.624Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -186,12 +186,14 @@
       "id": "wish-terrazza",
       "type": "food",
       "genre": "パスタ・洋食",
-      "date": "",
+      "date": "2026-08-18",
       "when": "",
+      "time": "19:30",
       "title": "クチョルロテラチャ",
       "place": "江南区 清潭洞 90-25",
       "mapQuery": "서울 강남구 청담동 90-25",
-      "naverUrl": "https://naver.me/58qImKl0",
+      "url": "",
+      "tel": "",
       "memo": "🍝 **パスタ系を食べるならこの辺**（友人おすすめ）。清潭洞。"
     },
     {
