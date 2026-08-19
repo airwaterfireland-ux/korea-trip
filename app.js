@@ -312,11 +312,12 @@ function itemsForDate(date) {
   });
 
   (TRIP.stays || []).forEach(s => {
+    const t = stayTimes(s);
     if (s.checkOutDate === date) {
-      items.push({ sort: toMin(lastTime(s.checkOutTime)) - 1, kind: 'checkout', data: s });
+      items.push({ sort: toMin(lastTime(t.outTime)) - 1, kind: 'checkout', data: s });
     }
     if (s.checkInDate === date) {
-      items.push({ sort: toMin(s.checkInTime), kind: 'checkin', data: s });
+      items.push({ sort: toMin(t.inTime), kind: 'checkin', data: s });
     }
   });
 
@@ -326,6 +327,7 @@ function itemsForDate(date) {
   });
 
   (EXTRAS || []).forEach(e => {
+    if (e.type === 'stayOverride') return;
     if (e.date === date) items.push({ sort: toMin(e.time), kind: 'extra', data: e });
   });
 
@@ -440,6 +442,7 @@ function flightCard(f) {
 
 function stayCard(s, mode) {
   const isIn = mode === 'checkin';
+  const T = stayTimes(s);
   const acts = [
     linkBtn(gmapUrl(s), 'Googleマップで開く', 'primary'),
     linkBtn(gdirUrl(s), 'ここへの経路'),
@@ -450,21 +453,24 @@ function stayCard(s, mode) {
   if (s.propertyUrl) acts.push(linkBtn(s.propertyUrl, '施設ページ', 'ghost'));
   const d = docById(s.docId);
   if (d) acts.push(linkBtn(d.file, '予約確認書 PDF', 'ghost'));
+  acts.push(`<button class="abtn" type="button" data-staytime="${esc(s.id)}">🕒 時間を変更</button>`);
 
   const head = `
-      <div class="card-time"><div class="t">${esc(isIn ? leadTime(s.checkInTime) : lastTime(s.checkOutTime))}</div><div class="tn">${isIn ? 'IN' : 'OUTまで'}</div></div>
+      <div class="card-time"><div class="t">${esc(isIn ? leadTime(T.inTime) : lastTime(T.outTime))}</div><div class="tn">${isIn ? 'IN' : 'OUTまで'}</div></div>
       <div class="card-icon">🏨</div>
       <div class="card-main">
         <div class="card-title">${esc(s.name)}</div>
-        <div class="card-sub"><span class="badge ${isIn ? 'green' : 'amber'}">${isIn ? 'チェックイン' : 'チェックアウト'}</span>${esc(s.nameLocal)}</div>
+        <div class="card-sub"><span class="badge ${isIn ? 'green' : 'amber'}">${isIn ? 'チェックイン' : 'チェックアウト'}</span>${T.changed ? '<span class="badge blue">時間変更済み</span>' : ''}${esc(s.nameLocal)}</div>
       </div>`;
   const rest = `
     <div class="card-body">
       ${kv('住所', s.address)}
       ${kv('現地表記', s.addressLocal)}
       ${kv('電話', s.tel, true)}
-      ${kv('チェックイン', `${s.checkInDate.slice(5).replace('-', '/')}　${s.checkInTime}`)}
-      ${kv('チェックアウト', `${s.checkOutDate.slice(5).replace('-', '/')}　${s.checkOutTime}`)}
+      ${kv('チェックイン', `${s.checkInDate.slice(5).replace('-', '/')}　${T.inTime}`)}
+      ${kv('チェックアウト', `${s.checkOutDate.slice(5).replace('-', '/')}　${T.outTime}`)}
+      ${T.changed ? kv('元の時間', `IN ${s.checkInTime} ／ OUT ${s.checkOutTime}`) : ''}
+      ${T.memo ? kv('変更メモ', T.memo) : ''}
       ${kv('部屋', s.roomType)}
       ${kv('人数', s.guests)}
       ${kv('予約番号', s.bookingNo, true)}
@@ -643,9 +649,26 @@ const GENRES = ['焼肉', 'ホルモン', '韓国料理', '麺・粉食', 'パ�
 const NO_GENRE = '未分類';
 let wishGenre = '';   // '' = すべて
 
-/** 「行きたい」に出すお店。日程が決まったものも残す（メモ扱いの note だけ除く） */
+/** 「行きたい」に出すお店。日程が決まったものも残す（メモとホテル時間の上書きは除く） */
 function wishExtras() {
-  return (EXTRAS || []).filter(e => e.type !== 'note');
+  return (EXTRAS || []).filter(e => e.type !== 'note' && e.type !== 'stayOverride');
+}
+
+/* ---- ホテルのチェックイン／チェックアウト時間の上書き ----
+   trip.json は固定なので、変更内容は extras.json に持たせて2台で共有する。 */
+function stayOverrideOf(stayId) {
+  return (EXTRAS || []).find(e => e.type === 'stayOverride' && e.stayId === stayId) || null;
+}
+/** 表示用の時間（上書きがあればそちら） */
+function stayTimes(s) {
+  const ov = stayOverrideOf(s.id);
+  return {
+    inTime:  (ov && ov.checkInTime)  || s.checkInTime,
+    outTime: (ov && ov.checkOutTime) || s.checkOutTime,
+    memo: ov ? (ov.memo || '') : '',
+    changed: !!(ov && ((ov.checkInTime && ov.checkInTime !== s.checkInTime) ||
+                       (ov.checkOutTime && ov.checkOutTime !== s.checkOutTime))),
+  };
 }
 function genreOf(e) { return e.genre || NO_GENRE; }
 
@@ -886,6 +909,82 @@ async function deleteCurrent() {
   await syncAndRefresh(true);
 }
 
+/* ============ ホテルの時間を変更するシート ============ */
+
+let editingStayId = null;
+
+function openStaySheet(stayId) {
+  const st = (TRIP.stays || []).find(x => x.id === stayId);
+  if (!st) return;
+  editingStayId = stayId;
+  const T = stayTimes(st);
+  $('#stayHotel').textContent = `${st.name}（${st.checkInDate.slice(5).replace('-', '/')} 〜 ${st.checkOutDate.slice(5).replace('-', '/')}）`;
+  $('#sIn').value = T.inTime;
+  $('#sOut').value = T.outTime;
+  $('#sMemo').value = T.memo;
+  $('#sIn').placeholder = st.checkInTime;
+  $('#sOut').placeholder = st.checkOutTime;
+  $('#stayReset').hidden = !stayOverrideOf(stayId);
+  $('#stayBack').hidden = false;
+  document.body.style.overflow = 'hidden';
+  fitStaySheet();
+}
+
+function closeStaySheet() {
+  $('#stayBack').hidden = true;
+  editingStayId = null;
+  document.body.style.removeProperty('overflow');
+}
+
+function fitStaySheet() {
+  const back = $('#stayBack');
+  if (!back || back.hidden) return;
+  const vv = window.visualViewport;
+  if (!vv) return;
+  back.style.height = vv.height + 'px';
+  back.style.top = (vv.offsetTop || 0) + 'px';
+}
+if (window.visualViewport) {
+  window.visualViewport.addEventListener('resize', fitStaySheet);
+  window.visualViewport.addEventListener('scroll', fitStaySheet);
+}
+
+async function saveStaySheet() {
+  if (!editingStayId) return;
+  const st = (TRIP.stays || []).find(x => x.id === editingStayId);
+  const inT = $('#sIn').value.trim();
+  const outT = $('#sOut').value.trim();
+  if (!inT || !outT) { toast('チェックイン／チェックアウトを入力してください'); return; }
+
+  const ev = {
+    id: 'stayov-' + editingStayId,
+    type: 'stayOverride',
+    stayId: editingStayId,
+    date: '',
+    checkInTime: inT,
+    checkOutTime: outT,
+    memo: $('#sMemo').value.trim(),
+    title: `${st.name} の時間変更`,
+  };
+  queueOp({ op: 'upsert', event: ev });
+  EXTRAS = applyOps(EXTRAS.filter(x => x.id !== ev.id), [{ op: 'upsert', event: ev }]);
+  closeStaySheet();
+  renderDay(); renderAll();
+  toast('時間を変更しました');
+  await syncAndRefresh(true);
+}
+
+async function resetStayTime() {
+  if (!editingStayId) return;
+  const id = 'stayov-' + editingStayId;
+  queueOp({ op: 'delete', id });
+  EXTRAS = EXTRAS.filter(x => x.id !== id);
+  closeStaySheet();
+  renderDay(); renderAll();
+  toast('元の時間に戻しました');
+  await syncAndRefresh(true);
+}
+
 /* ============ 同期 ============ */
 
 async function syncAndRefresh(quiet) {
@@ -998,6 +1097,8 @@ function bind() {
       tg.setAttribute('aria-expanded', String(open));
       return;
     }
+    const stm = e.target.closest('[data-staytime]');
+    if (stm) { openStaySheet(stm.dataset.staytime); return; }
     const ed = e.target.closest('[data-edit]');
     if (ed) { openSheet(ed.dataset.edit); return; }
   });
@@ -1008,9 +1109,17 @@ function bind() {
   $('#sheetSave').addEventListener('click', saveSheet);
   $('#sheetCancel2').addEventListener('click', closeSheet);
   $('#sheetSave2').addEventListener('click', saveSheet);
+  $('#stayCancel').addEventListener('click', closeStaySheet);
+  $('#stayCancel2').addEventListener('click', closeStaySheet);
+  $('#staySave').addEventListener('click', saveStaySheet);
+  $('#staySave2').addEventListener('click', saveStaySheet);
+  $('#stayReset').addEventListener('click', resetStayTime);
+  $('#stayBack').addEventListener('click', e => { if (e.target.id === 'stayBack') closeStaySheet(); });
   // iOSでキーボードが出ても操作できなくならないよう、Escでも閉じられるように
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && !$('#sheetBack').hidden) closeSheet();
+    if (e.key !== 'Escape') return;
+    if (!$('#sheetBack').hidden) closeSheet();
+    if (!$('#stayBack').hidden) closeStaySheet();
   });
   $('#fDelete').addEventListener('click', deleteCurrent);
   $('#fDate').addEventListener('change', syncWhenField);

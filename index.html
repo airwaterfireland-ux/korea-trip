@@ -238,6 +238,39 @@
   </div>
 </div>
 
+<!-- ホテルの時間を変更するシート -->
+<div class="sheet-backdrop" id="stayBack" hidden>
+  <div class="sheet" role="dialog" aria-modal="true">
+    <div class="sheet-head">
+      <button class="link-btn" id="stayCancel" type="button">キャンセル</button>
+      <strong id="stayTitle">時間を変更</strong>
+      <button class="link-btn strong" id="staySave" type="button">保存</button>
+    </div>
+    <div class="sheet-body">
+      <p class="lead" style="padding:0 0 12px" id="stayHotel"></p>
+      <label class="field">
+        <span>チェックイン</span>
+        <input type="text" id="sIn" autocapitalize="off" placeholder="例：15:00〜24:00">
+      </label>
+      <label class="field">
+        <span>チェックアウト</span>
+        <input type="text" id="sOut" autocapitalize="off" placeholder="例：12:00まで">
+      </label>
+      <p class="hint">「15:00」「15:00〜24:00」「12:00まで」など自由に書けます。日程タブの並び順は、チェックインは最初の時刻、チェックアウトは最後の時刻を使います。</p>
+      <label class="field">
+        <span>メモ（任意）</span>
+        <input type="text" id="sMemo" placeholder="例：レイトチェックアウトを電話で交渉済み">
+      </label>
+      <div class="row-btns sheet-actions">
+        <button class="btn" id="stayCancel2" type="button">キャンセル</button>
+        <button class="btn btn-primary" id="staySave2" type="button">保存</button>
+      </div>
+      <button class="btn wide" id="stayReset" type="button" hidden>元の時間に戻す</button>
+      <div class="spacer-sm"></div>
+    </div>
+  </div>
+</div>
+
 <div class="toast" id="toast" hidden></div>
 
 <script src="app.js"></script>
