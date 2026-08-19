@@ -1,6 +1,6 @@
 {
-  "version": 12,
-  "updatedAt": "2026-08-18T07:16:20.547Z",
+  "version": 13,
+  "updatedAt": "2026-08-19T15:43:50.971Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -253,6 +253,20 @@
       "time": "",
       "title": "オダリチプカンジャンケジャン江南直営店",
       "place": "韓国 Seoul, Gangnam District, Nonhyeon-ro 94-gil, ７ 2층",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt09hhk1-xger",
+      "type": "food",
+      "genre": "",
+      "date": "2026-08-20",
+      "when": "",
+      "time": "",
+      "title": "テスト店",
+      "place": "",
       "mapQuery": "",
       "url": "",
       "tel": "",
