@@ -1,14 +1,14 @@
 {
-  "version": 4,
-  "updatedAt": "2026-08-17T01:05:00+09:00",
+  "version": 12,
+  "updatedAt": "2026-08-18T07:16:20.547Z",
   "events": [
     {
       "id": "extra-nudake",
       "type": "food",
       "genre": "カフェ",
-      "date": "2026-08-23",
-      "time": "18:00",
+      "date": "2026-08-18",
       "when": "前半",
+      "time": "12:00",
       "title": "NUDAKE Tea House（누데이크 티 하우스）",
       "place": "城東区 トゥクソムロ433　HAUS NOWHERE 聖水 5階",
       "mapQuery": "누데이크 티하우스 서울 성동구 뚝섬로 433",
@@ -16,16 +16,18 @@
       "tel": "1660-1010",
       "memo": "ジェントルモンスターのデザートブランド。営業 11:00〜21:00。**一応8/23に予約済みだが、行けたら前半（8/17・8/18の聖水めぐり）に行きたい。**前半に行けたらこの予約は取り直し／キャンセルを検討。"
     },
-
     {
       "id": "wish-rafre",
       "type": "food",
       "genre": "カフェ",
-      "date": "",
+      "date": "2026-08-17",
       "when": "前半",
+      "time": "15:00",
       "title": "ラフレフルーツ 聖水店（RAFRE FRUIT）",
       "place": "城東区 ソウルの森2キル 8-8 2階（トゥクソム駅8番出口 徒歩10分）",
       "mapQuery": "RAFRE FRUIT 서울숲2길 8-8",
+      "url": "",
+      "tel": "",
       "memo": "高級フルーツのデザート専門カフェ。済州アップルマンゴーのかき氷が看板。営業 月〜金 13:00〜19:00／土日 13:00〜20:00。**13:00開店** なので午前に行っても閉まっている。NUDAKEと合わせて聖水でウェイティング状況を見る。"
     },
     {
@@ -45,26 +47,28 @@
       "id": "wish-yeongcheon",
       "type": "food",
       "genre": "焼肉",
-      "date": "",
+      "date": "2026-08-17",
       "when": "前半",
+      "time": "19:00",
       "title": "ヨンチョンヨンファ 清潭店（영천영화）",
       "place": "江南区 清潭洞 50-13",
       "mapQuery": "영천영화 서울 강남구 청담동 50-13",
-      "naverUrl": "https://naver.me/GmpY6EAQ",
+      "url": "",
+      "tel": "",
       "memo": "**結局ここのユッケビビンバと肉がいちばん美味しい**（友人おすすめ）。24時間営業・個室あり。予約は直接電話か AutoReserve などの代行。予約なしでウェイティングして入る人も多い人気店。"
     },
-
     {
       "id": "wish-yul",
       "type": "food",
       "genre": "焼肉",
-      "date": "",
+      "date": "2026-08-18",
       "when": "後半",
+      "time": "14:00",
       "title": "焼肉店ヨル（고깃집열）",
       "place": "瑞草区 瑞草洞 1330-14（江南駅）",
       "mapQuery": "고깃집열 서울 서초구 서초동 1330-14",
-      "naverUrl": "https://naver.me/5xgXfx3p",
       "url": "https://www.instagram.com/bbqyul_official/",
+      "tel": "",
       "memo": "サムギョプサルの店。**ニンニクそばがめちゃくちゃ美味しい**（友人おすすめ）。⚠️ 週末は混むので **キャッチテーブル（CatchTable）から予約推奨**。NAVER予約は非対応。夜のピーク（18:00頃）は枠が埋まりやすいので早めに。日曜定休。"
     },
     {
@@ -141,7 +145,6 @@
       "url": "https://app.catchtable.co.kr/ct/shop/dosanjeongyuk_black",
       "memo": "**焼肉。ここもサイドメニューが美味しい**（友人おすすめ）。予約は CatchTable から。"
     },
-
     {
       "id": "wish-onjisim",
       "type": "food",
@@ -183,12 +186,14 @@
       "id": "wish-terrazza",
       "type": "food",
       "genre": "パスタ・洋食",
-      "date": "",
+      "date": "2026-08-18",
       "when": "",
+      "time": "19:30",
       "title": "クチョルロテラチャ",
       "place": "江南区 清潭洞 90-25",
       "mapQuery": "서울 강남구 청담동 90-25",
-      "naverUrl": "https://naver.me/58qImKl0",
+      "url": "",
+      "tel": "",
       "memo": "🍝 **パスタ系を食べるならこの辺**（友人おすすめ）。清潭洞。"
     },
     {
@@ -203,7 +208,6 @@
       "naverUrl": "https://naver.me/5o0LeMRc",
       "memo": "🍝 パスタ系。**17:00までだとキティちゃんのパンケーキがあってかわいい**（友人おすすめ）。⚠️ 龍山なので江南からは離れています。行くなら早い時間に。"
     },
-
     {
       "id": "wish-london-bagel",
       "type": "food",
@@ -230,12 +234,29 @@
       "id": "wish-schedule",
       "type": "food",
       "genre": "カフェ",
-      "date": "",
+      "date": "2026-08-17",
       "when": "",
+      "time": "13:00",
       "title": "スケジュール（カフェ）",
       "place": "",
       "mapQuery": "스케줄 카페 서울",
+      "url": "",
+      "tel": "",
       "memo": "⚠️ 店舗を特定できませんでした。おすすめ画像にも載っていません。地図が違う場所を指したら、このカードを編集して検索ワードを直してください。"
+    },
+    {
+      "id": "extra-msw4l2eg-mrkw",
+      "type": "food",
+      "genre": "韓国料理",
+      "date": "",
+      "when": "",
+      "time": "",
+      "title": "オダリチプカンジャンケジャン江南直営店",
+      "place": "韓国 Seoul, Gangnam District, Nonhyeon-ro 94-gil, ７ 2층",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
     }
   ]
 }
