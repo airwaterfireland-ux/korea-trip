@@ -811,6 +811,8 @@ function openSheet(id) {
   $('#fDelete').hidden = !e;
   syncWhenField();
   $('#sheetBack').hidden = false;
+  document.body.style.overflow = 'hidden';
+  fitSheetToViewport();
 }
 
 /** 日付が入っているときは「時期の目安」を隠す */
@@ -820,12 +822,36 @@ function syncWhenField() {
     ? '日程タブに表示されます。「行きたい」タブにも「日程決定」として残ります。'
     : '日付が空のあいだは「行きたい」タブにだけ表示されます。';
 }
-function closeSheet() { $('#sheetBack').hidden = true; editingId = null; }
+function closeSheet() {
+  $('#sheetBack').hidden = true;
+  editingId = null;
+  document.body.style.removeProperty('overflow');
+}
+
+/* iOS Safari はキーボードが出ても画面の高さが変わらず、position:fixed の
+   要素が画面外へずれることがある。visualViewport に追従させて、
+   シートの見出し（キャンセル／保存）が必ず見える位置に留める。 */
+function fitSheetToViewport() {
+  const back = $('#sheetBack');
+  if (!back || back.hidden) return;
+  const vv = window.visualViewport;
+  if (!vv) return;
+  back.style.height = vv.height + 'px';
+  back.style.top = (vv.offsetTop || 0) + 'px';
+}
+if (window.visualViewport) {
+  window.visualViewport.addEventListener('resize', fitSheetToViewport);
+  window.visualViewport.addEventListener('scroll', fitSheetToViewport);
+}
 
 async function saveSheet() {
   const title = $('#fTitle').value.trim();
   const date  = $('#fDate').value;
-  if (!title) { toast('店名・タイトルを入力してください'); return; }
+  if (!title) {
+    toast('店名・タイトルを入力してください');
+    $('#fTitle').focus();
+    return;
+  }
 
   const ev = {
     id: editingId || ('extra-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 6)),
@@ -980,6 +1006,12 @@ function bind() {
   $('#fab').addEventListener('click', () => openSheet(null));
   $('#sheetCancel').addEventListener('click', closeSheet);
   $('#sheetSave').addEventListener('click', saveSheet);
+  $('#sheetCancel2').addEventListener('click', closeSheet);
+  $('#sheetSave2').addEventListener('click', saveSheet);
+  // iOSでキーボードが出ても操作できなくならないよう、Escでも閉じられるように
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !$('#sheetBack').hidden) closeSheet();
+  });
   $('#fDelete').addEventListener('click', deleteCurrent);
   $('#fDate').addEventListener('change', syncWhenField);
   $('#fDate').addEventListener('input', syncWhenField);

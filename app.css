@@ -314,18 +314,25 @@ a{color:var(--accent)}
 .tab.active{color:var(--accent)}
 
 /* シート */
-.sheet-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:60;display:flex;align-items:flex-end}
+.sheet-backdrop{
+  position:fixed;left:0;top:0;width:100%;
+  height:100vh;height:100dvh;              /* iOS のURLバー分を除いた実寸 */
+  background:rgba(0,0,0,.55);z-index:60;display:flex;align-items:flex-end;
+}
 .sheet{
-  width:100%;max-height:92vh;background:var(--bg);border-radius:18px 18px 0 0;
+  width:100%;background:var(--bg);border-radius:18px 18px 0 0;
+  /* 上のセーフエリア分は必ず空ける＝背景をタップして閉じる逃げ場を残す */
+  max-height:calc(100% - var(--safe-t) - 28px);
   display:flex;flex-direction:column;animation:up .22s ease-out;
 }
 @keyframes up{from{transform:translateY(30px);opacity:.6}to{transform:none;opacity:1}}
 .sheet-head{
   display:flex;align-items:center;justify-content:space-between;gap:10px;
   padding:14px 16px;border-bottom:1px solid var(--line);flex:none;
+  position:sticky;top:0;z-index:2;background:var(--bg);
 }
 .sheet-head strong{font-size:15px}
-.link-btn{border:none;background:transparent;color:var(--accent);font-size:15px;cursor:pointer;padding:2px 0}
+.link-btn{border:none;background:transparent;color:var(--accent);font-size:15px;cursor:pointer;padding:8px 4px;min-height:44px}
 .link-btn.strong{font-weight:700}
 .sheet-body{padding:16px 16px calc(var(--safe-b) + 20px);overflow-y:auto;-webkit-overflow-scrolling:touch}
 
@@ -339,3 +346,7 @@ a{color:var(--accent)}
 
 /* 公開ページに置いていない書類の案内 */
 .doc.note-doc{background:var(--card2);border-style:dashed}
+
+/* シート下部の操作ボタン（キーボードで上部が隠れても押せる保険） */
+.sheet-actions{margin:6px 0 12px}
+.sheet-actions .btn{min-height:48px}

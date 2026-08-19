@@ -1,5 +1,5 @@
 /* オフライン用サービスワーカー */
-const VERSION = 'kt-v16';
+const VERSION = 'kt-v17';
 const CORE = 'core-' + VERSION;
 const DOCS = 'docs-' + VERSION;
 
