@@ -1,6 +1,6 @@
 {
-  "version": 16,
-  "updatedAt": "2026-08-20T01:33:52.153Z",
+  "version": 17,
+  "updatedAt": "2026-08-20T04:12:53.323Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -291,6 +291,20 @@
       "checkOutTime": "06:00〜11:00",
       "memo": "",
       "title": "High End Luxury Room 2 の時間変更"
+    },
+    {
+      "id": "extra-mt108rit-5ud2",
+      "type": "food",
+      "genre": "スイーツ",
+      "date": "2026-08-20",
+      "when": "",
+      "time": "16:00",
+      "title": "ラフレフルーツ聖水",
+      "place": "",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
     }
   ]
 }
