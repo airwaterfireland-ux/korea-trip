@@ -1,6 +1,6 @@
 {
-  "version": 15,
-  "updatedAt": "2026-08-20T01:32:35.782Z",
+  "version": 16,
+  "updatedAt": "2026-08-20T01:33:52.153Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -260,13 +260,13 @@
     },
     {
       "id": "extra-mt09hhk1-xger",
-      "type": "food",
-      "genre": "",
+      "type": "note",
+      "genre": "その他",
       "date": "2026-08-20",
       "when": "",
-      "time": "",
-      "title": "テスト店",
-      "place": "",
+      "time": "15:00",
+      "title": "レーザー",
+      "place": "アナザー",
       "mapQuery": "",
       "url": "",
       "tel": "",
