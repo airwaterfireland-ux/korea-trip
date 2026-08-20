@@ -1,6 +1,6 @@
 {
-  "version": 18,
-  "updatedAt": "2026-08-20T04:14:29.659Z",
+  "version": 19,
+  "updatedAt": "2026-08-20T06:28:13.067Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -174,12 +174,14 @@
       "id": "wish-gongku",
       "type": "food",
       "genre": "パスタ・洋食",
-      "date": "",
+      "date": "2026-08-21",
       "when": "",
+      "time": "19:00",
       "title": "コンク 狎鴎亭本店",
       "place": "江南区 新沙洞 661-4",
       "mapQuery": "서울 강남구 신사동 661-4",
-      "naverUrl": "https://naver.me/xnO8b7Jp",
+      "url": "",
+      "tel": "",
       "memo": "🍝 **パスタ系を食べるならこの辺**（友人おすすめ）。狎鴎亭。クチョルロテラチャ・ハウスガレージと同じ流れで勧められたお店。"
     },
     {
