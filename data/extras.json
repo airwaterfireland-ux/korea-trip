@@ -1,6 +1,6 @@
 {
-  "version": 14,
-  "updatedAt": "2026-08-20T01:32:08.582Z",
+  "version": 15,
+  "updatedAt": "2026-08-20T01:32:35.782Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -281,6 +281,16 @@
       "checkOutTime": "14:00まで",
       "memo": "",
       "title": "ステイ ホテル カンナム の時間変更"
+    },
+    {
+      "id": "stayov-stay2",
+      "type": "stayOverride",
+      "stayId": "stay2",
+      "date": "",
+      "checkInTime": "14:00〜23:00",
+      "checkOutTime": "06:00〜11:00",
+      "memo": "",
+      "title": "High End Luxury Room 2 の時間変更"
     }
   ]
 }
