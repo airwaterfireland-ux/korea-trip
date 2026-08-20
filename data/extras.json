@@ -1,6 +1,6 @@
 {
-  "version": 17,
-  "updatedAt": "2026-08-20T04:12:53.323Z",
+  "version": 18,
+  "updatedAt": "2026-08-20T04:14:29.659Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -301,6 +301,20 @@
       "time": "16:00",
       "title": "ラフレフルーツ聖水",
       "place": "",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt10atte-ijse",
+      "type": "food",
+      "genre": "韓国料理",
+      "date": "2026-08-20",
+      "when": "",
+      "time": "17:30",
+      "title": "ムグオク聖水",
+      "place": "ソウル特別市 城東区 聖水洞二街 277-50",
       "mapQuery": "",
       "url": "",
       "tel": "",
