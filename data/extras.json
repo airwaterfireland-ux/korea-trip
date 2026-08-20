@@ -1,6 +1,6 @@
 {
-  "version": 19,
-  "updatedAt": "2026-08-20T06:28:13.067Z",
+  "version": 20,
+  "updatedAt": "2026-08-20T10:03:24.265Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -317,6 +317,20 @@
       "time": "17:30",
       "title": "ムグオク聖水",
       "place": "ソウル特別市 城東区 聖水洞二街 277-50",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt1crion-j6sr",
+      "type": "spot",
+      "genre": "",
+      "date": "2026-08-20",
+      "when": "",
+      "time": "19:00",
+      "title": "ソンスで買い物",
+      "place": "",
       "mapQuery": "",
       "url": "",
       "tel": "",
