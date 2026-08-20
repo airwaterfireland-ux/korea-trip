@@ -1,6 +1,6 @@
 {
-  "version": 20,
-  "updatedAt": "2026-08-20T10:03:24.265Z",
+  "version": 21,
+  "updatedAt": "2026-08-20T10:03:57.954Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -330,6 +330,20 @@
       "when": "",
       "time": "19:00",
       "title": "ソンスで買い物",
+      "place": "",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt1cs8nu-dk01",
+      "type": "note",
+      "genre": "",
+      "date": "2026-08-21",
+      "when": "",
+      "time": "10:00",
+      "title": "仕事",
       "place": "",
       "mapQuery": "",
       "url": "",
