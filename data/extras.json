@@ -1,6 +1,6 @@
 {
-  "version": 26,
-  "updatedAt": "2026-08-21T14:53:42.062Z",
+  "version": 27,
+  "updatedAt": "2026-08-21T15:10:35.690Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -365,6 +365,20 @@
       "time": "11:00",
       "title": "レーザー",
       "place": "アナザー",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt336fk1-ejif",
+      "type": "food",
+      "genre": "韓国料理",
+      "date": "2026-08-22",
+      "when": "",
+      "time": "12:00",
+      "title": "江南エゴママッククス",
+      "place": "서울특별시 강남구 테헤란로4길 １３",
       "mapQuery": "",
       "url": "",
       "tel": "",
