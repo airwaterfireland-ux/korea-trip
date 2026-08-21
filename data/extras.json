@@ -1,6 +1,6 @@
 {
-  "version": 21,
-  "updatedAt": "2026-08-20T10:03:57.954Z",
+  "version": 22,
+  "updatedAt": "2026-08-21T14:41:55.255Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -202,12 +202,14 @@
       "id": "wish-house-garage",
       "type": "food",
       "genre": "パスタ・洋食",
-      "date": "",
+      "date": "2026-08-24",
       "when": "",
+      "time": "13:00",
       "title": "ハウスガレージ",
       "place": "龍山区 龍山洞二街 22-9",
       "mapQuery": "서울 용산구 용산동2가 22-9",
-      "naverUrl": "https://naver.me/5o0LeMRc",
+      "url": "",
+      "tel": "",
       "memo": "🍝 パスタ系。**17:00までだとキティちゃんのパンケーキがあってかわいい**（友人おすすめ）。⚠️ 龍山なので江南からは離れています。行くなら早い時間に。"
     },
     {
