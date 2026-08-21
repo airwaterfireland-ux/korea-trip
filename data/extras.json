@@ -1,6 +1,6 @@
 {
-  "version": 23,
-  "updatedAt": "2026-08-21T14:42:39.526Z",
+  "version": 24,
+  "updatedAt": "2026-08-21T14:44:11.895Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -149,13 +149,14 @@
       "id": "wish-onjisim",
       "type": "food",
       "genre": "カフェ",
-      "date": "",
+      "date": "2026-08-24",
       "when": "",
+      "time": "15:00",
       "title": "オンジシム（온지심）",
       "place": "鍾路区 敦義洞 21（益善洞エリア）",
       "mapQuery": "온지심 서울 종로구 돈의동 21",
-      "naverUrl": "https://naver.me/xWI8S46i",
       "url": "https://m.place.naver.com/restaurant/1384003744/home",
+      "tel": "",
       "memo": "🥯 **韓国にベーグル屋は沢山あるが、ここのベーグルは本当に美味しい**（友人おすすめ）。江南から地下鉄で30分ほど、鍾路（益善洞）。他の店とはエリアが違うので、鍾路方面に出る日にまとめるとよい。"
     },
     {
