@@ -909,6 +909,32 @@ async function deleteCurrent() {
   await syncAndRefresh(true);
 }
 
+/* ============ 書類ビューアー ============
+   ホーム画面から起動していると iOS は target="_blank" を無視して
+   同じウィンドウでPDFを開いてしまい、戻る手段が無くなる。
+   そのためアプリ内のオーバーレイで開く。 */
+
+function openViewer(url, title) {
+  const body = $('#viewerBody');
+  const isImg = /\.(png|jpe?g|gif|webp)$/i.test(url);
+  body.innerHTML = isImg
+    ? `<img src="${esc(url)}" alt="${esc(title)}">`
+    : `<iframe src="${esc(url)}" title="${esc(title)}"></iframe>
+       <div class="viewer-fallback">表示されないときは
+         <a href="${esc(url)}" target="_blank" rel="noopener">こちらから開いてください</a>
+       </div>`;
+  $('#viewerTitle').textContent = title || '';
+  $('#viewerExt').href = url;
+  $('#viewer').hidden = false;
+  document.body.style.overflow = 'hidden';
+}
+
+function closeViewer() {
+  $('#viewer').hidden = true;
+  $('#viewerBody').innerHTML = '';   // PDFの読み込みを止める
+  document.body.style.removeProperty('overflow');
+}
+
 /* ============ ホテルの時間を変更するシート ============ */
 
 let editingStayId = null;
@@ -1072,6 +1098,15 @@ function bind() {
   });
 
   document.addEventListener('click', e => {
+    // 同梱書類（PDF・画像）はアプリ内ビューアーで開く
+    const docLink = e.target.closest('a[href^="docs/"]');
+    if (docLink && $('#viewer').hidden) {
+      e.preventDefault();
+      const t = docLink.querySelector('.dt');   // 書類タブは表題だけ使う
+      openViewer(docLink.getAttribute('href'),
+                 (t ? t.textContent : docLink.innerText).trim() || '書類');
+      return;
+    }
     // 「日程決定」バッジはカード見出しの中にあるので、開閉より先に処理する
     const go = e.target.closest('[data-goto]');
     if (go) { e.preventDefault(); setDate(go.dataset.goto); switchView('plan'); return; }
@@ -1115,11 +1150,13 @@ function bind() {
   $('#staySave2').addEventListener('click', saveStaySheet);
   $('#stayReset').addEventListener('click', resetStayTime);
   $('#stayBack').addEventListener('click', e => { if (e.target.id === 'stayBack') closeStaySheet(); });
+  $('#viewerClose').addEventListener('click', closeViewer);
   // iOSでキーボードが出ても操作できなくならないよう、Escでも閉じられるように
   document.addEventListener('keydown', e => {
     if (e.key !== 'Escape') return;
     if (!$('#sheetBack').hidden) closeSheet();
     if (!$('#stayBack').hidden) closeStaySheet();
+    if (!$('#viewer').hidden) closeViewer();
   });
   $('#fDelete').addEventListener('click', deleteCurrent);
   $('#fDate').addEventListener('change', syncWhenField);

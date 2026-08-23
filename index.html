@@ -271,6 +271,16 @@
   </div>
 </div>
 
+<!-- 書類ビューアー（PWAだと戻れなくなるので、アプリ内で開く） -->
+<div class="viewer" id="viewer" hidden>
+  <div class="viewer-bar">
+    <button class="viewer-close" id="viewerClose" type="button">✕ 閉じる</button>
+    <div class="viewer-title" id="viewerTitle"></div>
+    <a class="viewer-ext" id="viewerExt" href="#" target="_blank" rel="noopener">Safariで開く</a>
+  </div>
+  <div class="viewer-body" id="viewerBody"></div>
+</div>
+
 <div class="toast" id="toast" hidden></div>
 
 <script src="app.js"></script>

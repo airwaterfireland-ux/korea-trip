@@ -350,3 +350,28 @@ a{color:var(--accent)}
 /* シート下部の操作ボタン（キーボードで上部が隠れても押せる保険） */
 .sheet-actions{margin:6px 0 12px}
 .sheet-actions .btn{min-height:48px}
+
+/* ---------- 書類ビューアー ---------- */
+.viewer{
+  position:fixed;left:0;top:0;width:100%;height:100vh;height:100dvh;
+  z-index:70;background:var(--bg);display:flex;flex-direction:column;
+}
+.viewer-bar{
+  flex:none;display:flex;align-items:center;gap:10px;
+  padding:calc(var(--safe-t) + 10px) 14px 10px;
+  background:var(--bg2);border-bottom:1px solid var(--line);
+}
+.viewer-close{
+  flex:none;border:1px solid var(--line);background:var(--card);border-radius:999px;
+  padding:9px 15px;font-size:14px;font-weight:700;cursor:pointer;min-height:44px;
+}
+.viewer-title{
+  flex:1;min-width:0;font-size:13px;font-weight:600;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center;
+}
+.viewer-ext{flex:none;font-size:13px;font-weight:600;padding:9px 4px;min-height:44px;display:flex;align-items:center}
+.viewer-body{flex:1;min-height:0;background:#525659;overflow:auto;-webkit-overflow-scrolling:touch}
+.viewer-body iframe{width:100%;height:100%;border:none;display:block;background:#525659}
+.viewer-body img{width:100%;height:auto;display:block}
+.viewer-fallback{padding:28px 20px;color:#fff;text-align:center;font-size:14px;line-height:1.9}
+.viewer-fallback a{color:#9ccbff;font-weight:700}
