@@ -1,5 +1,5 @@
 /* オフライン用サービスワーカー */
-const VERSION = 'kt-v18';
+const VERSION = 'kt-v19';
 const CORE = 'core-' + VERSION;
 const DOCS = 'docs-' + VERSION;
 
@@ -15,6 +15,12 @@ const CORE_FILES = [
 ];
 
 const DOC_FILES = [
+  './docs/eticket-ja.pdf',
+  './docs/eticket-en.pdf',
+  './docs/earrival.pdf',
+  './docs/hotel1-stay-gangnam.pdf',
+  './docs/hotel2-high-end.pdf',
+  './docs/hotel3-white-linen.pdf',
   './docs/meetpoint-icn-t1-photo.jpg',
   './docs/meetpoint-icn-t1-map.png',
   './docs/luggage-service-ja.pdf',
