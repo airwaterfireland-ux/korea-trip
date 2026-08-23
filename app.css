@@ -375,3 +375,6 @@ a{color:var(--accent)}
 .viewer-body img{width:100%;height:auto;display:block}
 .viewer-fallback{padding:28px 20px;color:#fff;text-align:center;font-size:14px;line-height:1.9}
 .viewer-fallback a{color:#9ccbff;font-weight:700}
+
+/* ホテルのメモ：改行をそのまま表示 */
+.kv .v.memo{white-space:pre-line}

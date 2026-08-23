@@ -454,24 +454,24 @@ function stayCard(s, mode) {
   if (s.propertyUrl) acts.push(linkBtn(s.propertyUrl, '施設ページ', 'ghost'));
   const d = docById(s.docId);
   if (d) acts.push(linkBtn(d.file, '予約確認書 PDF', 'ghost'));
-  acts.push(`<button class="abtn" type="button" data-staytime="${esc(s.id)}">🕒 時間を変更</button>`);
+  acts.push(`<button class="abtn ${T.hasMemo ? '' : 'ghost'}" type="button" data-staytime="${esc(s.id)}">✏️ メモ・時間を編集</button>`);
 
   const head = `
       <div class="card-time"><div class="t">${esc(isIn ? leadTime(T.inTime) : lastTime(T.outTime))}</div><div class="tn">${isIn ? 'IN' : 'OUTまで'}</div></div>
       <div class="card-icon">🏨</div>
       <div class="card-main">
         <div class="card-title">${esc(s.name)}</div>
-        <div class="card-sub"><span class="badge ${isIn ? 'green' : 'amber'}">${isIn ? 'チェックイン' : 'チェックアウト'}</span>${T.changed ? '<span class="badge blue">時間変更済み</span>' : ''}${esc(s.nameLocal)}</div>
+        <div class="card-sub"><span class="badge ${isIn ? 'green' : 'amber'}">${isIn ? 'チェックイン' : 'チェックアウト'}</span>${T.timeChanged ? '<span class="badge blue">時間変更済み</span>' : ''}${T.hasMemo ? '<span class="badge green">メモあり</span>' : ''}${esc(s.nameLocal)}</div>
       </div>`;
   const rest = `
     <div class="card-body">
+      ${T.memo ? `<div class="kv"><div class="k">メモ</div><div class="v memo">${rich(T.memo)}</div></div>` : ''}
       ${kv('住所', s.address)}
       ${kv('現地表記', s.addressLocal)}
       ${kv('電話', s.tel, true)}
       ${kv('チェックイン', `${s.checkInDate.slice(5).replace('-', '/')}　${T.inTime}`)}
       ${kv('チェックアウト', `${s.checkOutDate.slice(5).replace('-', '/')}　${T.outTime}`)}
-      ${T.changed ? kv('元の時間', `IN ${s.checkInTime} ／ OUT ${s.checkOutTime}`) : ''}
-      ${T.memo ? kv('変更メモ', T.memo) : ''}
+      ${T.timeChanged ? kv('元の時間', `IN ${s.checkInTime} ／ OUT ${s.checkOutTime}`) : ''}
       ${kv('部屋', s.roomType)}
       ${kv('人数', s.guests)}
       ${kv('予約番号', s.bookingNo, true)}
@@ -667,8 +667,9 @@ function stayTimes(s) {
     inTime:  (ov && ov.checkInTime)  || s.checkInTime,
     outTime: (ov && ov.checkOutTime) || s.checkOutTime,
     memo: ov ? (ov.memo || '') : '',
-    changed: !!(ov && ((ov.checkInTime && ov.checkInTime !== s.checkInTime) ||
-                       (ov.checkOutTime && ov.checkOutTime !== s.checkOutTime))),
+    timeChanged: !!(ov && ((ov.checkInTime && ov.checkInTime !== s.checkInTime) ||
+                           (ov.checkOutTime && ov.checkOutTime !== s.checkOutTime))),
+    hasMemo: !!(ov && ov.memo),
   };
 }
 function genreOf(e) { return e.genre || NO_GENRE; }
@@ -945,6 +946,7 @@ function openStaySheet(stayId) {
   if (!st) return;
   editingStayId = stayId;
   const T = stayTimes(st);
+  $('#stayTitle').textContent = 'ホテルのメモ・時間';
   $('#stayHotel').textContent = `${st.name}（${st.checkInDate.slice(5).replace('-', '/')} 〜 ${st.checkOutDate.slice(5).replace('-', '/')}）`;
   $('#sIn').value = T.inTime;
   $('#sOut').value = T.outTime;
@@ -979,9 +981,11 @@ if (window.visualViewport) {
 async function saveStaySheet() {
   if (!editingStayId) return;
   const st = (TRIP.stays || []).find(x => x.id === editingStayId);
-  const inT = $('#sIn').value.trim();
-  const outT = $('#sOut').value.trim();
-  if (!inT || !outT) { toast('チェックイン／チェックアウトを入力してください'); return; }
+  const inT = $('#sIn').value.trim() || st.checkInTime;
+  const outT = $('#sOut').value.trim() || st.checkOutTime;
+  const memo = $('#sMemo').value.trim();
+  // 何も変えていないなら上書きを消す
+  if (inT === st.checkInTime && outT === st.checkOutTime && !memo) { await resetStayTime(); return; }
 
   const ev = {
     id: 'stayov-' + editingStayId,
@@ -990,25 +994,26 @@ async function saveStaySheet() {
     date: '',
     checkInTime: inT,
     checkOutTime: outT,
-    memo: $('#sMemo').value.trim(),
+    memo,
     title: `${st.name} の時間変更`,
   };
   queueOp({ op: 'upsert', event: ev });
   EXTRAS = applyOps(EXTRAS.filter(x => x.id !== ev.id), [{ op: 'upsert', event: ev }]);
   closeStaySheet();
   renderDay(); renderAll();
-  toast('時間を変更しました');
+  toast('保存しました');
   await syncAndRefresh(true);
 }
 
 async function resetStayTime() {
   if (!editingStayId) return;
   const id = 'stayov-' + editingStayId;
+  if (!stayOverrideOf(editingStayId)) { closeStaySheet(); return; }
   queueOp({ op: 'delete', id });
   EXTRAS = EXTRAS.filter(x => x.id !== id);
   closeStaySheet();
   renderDay(); renderAll();
-  toast('元の時間に戻しました');
+  toast('元に戻しました');
   await syncAndRefresh(true);
 }
 
