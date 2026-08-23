@@ -27,6 +27,7 @@ let EXTRAS = [];          // 共有の追加予定（マージ後）
 let EXTRAS_SHA = null;    // GitHub 上のファイル sha
 let selDate = null;       // 'YYYY-MM-DD'
 let editingId = null;
+let SW_REG = null;      // サービスワーカーの登録（更新確認に使う）
 
 /* ============ ユーティリティ ============ */
 
@@ -1214,6 +1215,16 @@ function bind() {
     } catch { toast('形式が正しくありません'); }
   });
 
+  $('#btnUpdate').addEventListener('click', async () => {
+    toast('最新版を確認しています…', 2000);
+    try {
+      if (SW_REG) await SW_REG.update();
+      const ks = await caches.keys();
+      await Promise.all(ks.map(k => caches.delete(k)));   // 古い書類キャッシュも捨てる
+    } catch {}
+    location.reload();
+  });
+
   $('#btnLock').addEventListener('click', () => {
     localStorage.removeItem(LS.unlocked);
     location.reload();
@@ -1227,7 +1238,9 @@ function bind() {
 
   // 復帰時に自動同期
   document.addEventListener('visibilitychange', () => {
-    if (!document.hidden && !$('#app').hidden) syncAndRefresh(true);
+    if (document.hidden || $('#app').hidden) return;
+    syncAndRefresh(true);
+    if (SW_REG) SW_REG.update().catch(() => {});   // 新しい版が出ていないか確認
   });
   window.addEventListener('online', () => syncAndRefresh(true));
 }
@@ -1248,9 +1261,28 @@ function bind() {
   await refreshExtras();
   if (!$('#app').hidden) { renderDay(); renderAll(); renderWish(); }
   renderSyncStatus();
-  $('#verInfo').textContent = `データ ${TRIP.meta.startDate} 〜 ${TRIP.meta.endDate} ／ 追加予定 ${EXTRAS.length}件`;
+  $('#verInfo').textContent =
+    `データ ${TRIP.meta.startDate} 〜 ${TRIP.meta.endDate} ／ 追加予定 ${EXTRAS.length}件`
+    + (window.matchMedia('(display-mode: standalone)').matches ? ' ／ ホーム画面から起動中' : '');
+  fetch('sw.js', { cache: 'no-store' }).then(r => r.text()).then(t => {
+    const m = /const VERSION = '([^']+)'/.exec(t);
+    if (m) $('#verInfo').textContent += ` ／ 版 ${m[1]}`;
+  }).catch(() => {});
 
+  /* ホーム画面から起動している場合、iOSはサスペンドから復帰しても
+     ページを再読み込みしないため、古いコードが動き続けることがある。
+     新しい版を検出したら自動で読み込み直す。 */
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').catch(() => {});
+    const hadController = !!navigator.serviceWorker.controller;
+    let reloading = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (!hadController || reloading) return;   // 初回インストール時は再読込しない
+      reloading = true;
+      location.reload();
+    });
+    navigator.serviceWorker.register('sw.js').then(reg => {
+      SW_REG = reg;
+      reg.update().catch(() => {});
+    }).catch(() => {});
   }
 })();
