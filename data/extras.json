@@ -1,6 +1,6 @@
 {
-  "version": 28,
-  "updatedAt": "2026-08-23T08:34:46.437Z",
+  "version": 29,
+  "updatedAt": "2026-08-23T08:35:03.716Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -383,6 +383,16 @@
       "url": "",
       "tel": "",
       "memo": ""
+    },
+    {
+      "id": "stayov-stay3",
+      "type": "stayOverride",
+      "stayId": "stay3",
+      "date": "",
+      "checkInTime": "15:00〜23:30",
+      "checkOutTime": "11:00まで",
+      "memo": "",
+      "title": "White Linen House の時間変更"
     }
   ]
 }
