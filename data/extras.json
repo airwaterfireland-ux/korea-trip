@@ -1,6 +1,6 @@
 {
-  "version": 30,
-  "updatedAt": "2026-08-24T06:37:31.472Z",
+  "version": 31,
+  "updatedAt": "2026-08-24T06:37:57.624Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -400,7 +400,7 @@
       "genre": "韓国料理",
       "date": "2026-08-23",
       "when": "",
-      "time": "",
+      "time": "20:00",
       "title": "東大門タッカンマリ",
       "place": "서울특별시 강남구 논현동 언주로148길 １４ 1층",
       "mapQuery": "",
