@@ -1,6 +1,6 @@
 {
-  "version": 35,
-  "updatedAt": "2026-08-24T06:42:49.583Z",
+  "version": 36,
+  "updatedAt": "2026-08-24T06:53:42.381Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -445,6 +445,20 @@
       "time": "14:00",
       "title": "rufruf",
       "place": "서울특별시 성동구 성수동2가 ２７１−２",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt6vqz9e-3vc1",
+      "type": "food",
+      "genre": "",
+      "date": "2026-08-23",
+      "when": "",
+      "time": "13:00",
+      "title": "ヤンヤンチプアックジョン店",
+      "place": "１７ Apgujeong-ro 30-gil, Gangnam District, Seoul, 韓国",
       "mapQuery": "",
       "url": "",
       "tel": "",
