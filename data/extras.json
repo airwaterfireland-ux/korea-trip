@@ -1,6 +1,6 @@
 {
-  "version": 29,
-  "updatedAt": "2026-08-23T08:35:03.716Z",
+  "version": 30,
+  "updatedAt": "2026-08-24T06:37:31.472Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -393,6 +393,20 @@
       "checkOutTime": "11:00まで",
       "memo": "",
       "title": "White Linen House の時間変更"
+    },
+    {
+      "id": "extra-mt6v665z-6xsa",
+      "type": "food",
+      "genre": "韓国料理",
+      "date": "2026-08-23",
+      "when": "",
+      "time": "",
+      "title": "東大門タッカンマリ",
+      "place": "서울특별시 강남구 논현동 언주로148길 １４ 1층",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
     }
   ]
 }
