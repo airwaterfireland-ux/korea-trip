@@ -1,6 +1,6 @@
 {
-  "version": 31,
-  "updatedAt": "2026-08-24T06:37:57.624Z",
+  "version": 32,
+  "updatedAt": "2026-08-24T06:39:16.126Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -403,6 +403,20 @@
       "time": "20:00",
       "title": "東大門タッカンマリ",
       "place": "서울특별시 강남구 논현동 언주로148길 １４ 1층",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt6v8ee5-d35i",
+      "type": "food",
+      "genre": "カフェ",
+      "date": "2026-08-22",
+      "when": "",
+      "time": "14:00",
+      "title": "ロンドンベーグルミュージアム",
+      "place": "서울특별시 강남구 언주로168길 ３３",
       "mapQuery": "",
       "url": "",
       "tel": "",
