@@ -1,6 +1,6 @@
 {
-  "version": 34,
-  "updatedAt": "2026-08-24T06:41:31.142Z",
+  "version": 35,
+  "updatedAt": "2026-08-24T06:42:49.583Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -431,6 +431,20 @@
       "time": "17:00",
       "title": "クッタンソンス店",
       "place": "서울특별시 성동구 성수이로20길 １０ 경협회관 104호",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt6vczhd-gmil",
+      "type": "food",
+      "genre": "カフェ",
+      "date": "2026-08-22",
+      "when": "",
+      "time": "14:00",
+      "title": "rufruf",
+      "place": "서울특별시 성동구 성수동2가 ２７１−２",
       "mapQuery": "",
       "url": "",
       "tel": "",
