@@ -1,6 +1,6 @@
 {
-  "version": 32,
-  "updatedAt": "2026-08-24T06:39:16.126Z",
+  "version": 33,
+  "updatedAt": "2026-08-24T06:39:33.362Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -412,7 +412,7 @@
       "id": "extra-mt6v8ee5-d35i",
       "type": "food",
       "genre": "カフェ",
-      "date": "2026-08-22",
+      "date": "2026-08-23",
       "when": "",
       "time": "14:00",
       "title": "ロンドンベーグルミュージアム",
