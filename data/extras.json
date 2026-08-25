@@ -1,6 +1,6 @@
 {
-  "version": 43,
-  "updatedAt": "2026-08-25T05:51:35.736Z",
+  "version": 44,
+  "updatedAt": "2026-08-25T05:52:39.061Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -547,6 +547,20 @@
       "url": "",
       "tel": "",
       "memo": "牛タンの店"
+    },
+    {
+      "id": "extra-mt890bdl-pcci",
+      "type": "note",
+      "genre": "その他",
+      "date": "2026-08-24",
+      "when": "",
+      "time": "17:00",
+      "title": "アックジョンで買い物",
+      "place": "",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": "alo とか"
     }
   ]
 }
