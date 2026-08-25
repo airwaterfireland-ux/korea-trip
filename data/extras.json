@@ -1,6 +1,6 @@
 {
-  "version": 46,
-  "updatedAt": "2026-08-25T05:54:08.492Z",
+  "version": 47,
+  "updatedAt": "2026-08-25T05:54:31.712Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -584,6 +584,20 @@
       "when": "",
       "time": "12:00",
       "title": "レーザー",
+      "place": "",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt892qe0-i54z",
+      "type": "note",
+      "genre": "",
+      "date": "2026-08-25",
+      "when": "",
+      "time": "10:00",
+      "title": "仕事",
       "place": "",
       "mapQuery": "",
       "url": "",
