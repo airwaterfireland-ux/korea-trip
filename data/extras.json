@@ -1,6 +1,6 @@
 {
-  "version": 41,
-  "updatedAt": "2026-08-25T05:46:51.715Z",
+  "version": 42,
+  "updatedAt": "2026-08-25T05:48:29.307Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -515,6 +515,20 @@
       "time": "08:30",
       "title": "Beton",
       "place": "서울특별시 강남구 테헤란로44길 ８ 12 층 13 층",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt88uyou-djzp",
+      "type": "food",
+      "genre": "韓国料理",
+      "date": "2026-08-21",
+      "when": "",
+      "time": "12:00",
+      "title": "bhcチキン出前",
+      "place": "",
       "mapQuery": "",
       "url": "",
       "tel": "",
