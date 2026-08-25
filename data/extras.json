@@ -1,6 +1,6 @@
 {
-  "version": 37,
-  "updatedAt": "2026-08-25T05:40:30.208Z",
+  "version": 38,
+  "updatedAt": "2026-08-25T05:42:30.209Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -459,6 +459,20 @@
       "time": "13:00",
       "title": "ヤンヤンチプアックジョン店",
       "place": "１７ Apgujeong-ro 30-gil, Gangnam District, Seoul, 韓国",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt88n9mk-iiq5",
+      "type": "food",
+      "genre": "韓国料理",
+      "date": "2026-08-19",
+      "when": "",
+      "time": "18:00",
+      "title": "ソジン食堂",
+      "place": "서울특별시 강남구 강남대로84길 ３３",
       "mapQuery": "",
       "url": "",
       "tel": "",
