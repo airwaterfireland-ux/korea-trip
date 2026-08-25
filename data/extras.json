@@ -1,6 +1,6 @@
 {
-  "version": 42,
-  "updatedAt": "2026-08-25T05:48:29.307Z",
+  "version": 43,
+  "updatedAt": "2026-08-25T05:51:35.736Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -533,6 +533,20 @@
       "url": "",
       "tel": "",
       "memo": ""
+    },
+    {
+      "id": "extra-mt88yyhh-6zek",
+      "type": "food",
+      "genre": "焼肉",
+      "date": "2026-08-24",
+      "when": "",
+      "time": "20:00",
+      "title": "チョウォン",
+      "place": "서울특별시 강남구 도산대로 ２３２",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": "牛タンの店"
     }
   ]
 }
