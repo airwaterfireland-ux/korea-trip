@@ -1,6 +1,6 @@
 {
-  "version": 39,
-  "updatedAt": "2026-08-25T05:44:19.745Z",
+  "version": 40,
+  "updatedAt": "2026-08-25T05:45:19.761Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -487,6 +487,20 @@
       "time": "19:00",
       "title": "Lazy Yogurt Gangnam",
       "place": "서울특별시 강남구 역삼로 109 #105",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt88qwdn-e2fe",
+      "type": "note",
+      "genre": "その他",
+      "date": "2026-08-21",
+      "when": "",
+      "time": "11:00",
+      "title": "レーザー",
+      "place": "アナザー",
       "mapQuery": "",
       "url": "",
       "tel": "",
