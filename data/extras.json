@@ -1,6 +1,6 @@
 {
-  "version": 38,
-  "updatedAt": "2026-08-25T05:42:30.209Z",
+  "version": 39,
+  "updatedAt": "2026-08-25T05:44:19.745Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -473,6 +473,20 @@
       "time": "18:00",
       "title": "ソジン食堂",
       "place": "서울특별시 강남구 강남대로84길 ３３",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt88pm5w-x4wg",
+      "type": "food",
+      "genre": "スイーツ",
+      "date": "2026-08-19",
+      "when": "",
+      "time": "19:00",
+      "title": "Lazy Yogurt Gangnam",
+      "place": "서울특별시 강남구 역삼로 109 #105",
       "mapQuery": "",
       "url": "",
       "tel": "",
