@@ -1,6 +1,6 @@
 {
-  "version": 45,
-  "updatedAt": "2026-08-25T05:53:37.320Z",
+  "version": 46,
+  "updatedAt": "2026-08-25T05:54:08.492Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -571,6 +571,20 @@
       "time": "09:00",
       "title": "Beton",
       "place": "서울특별시 강남구 테헤란로44길 ８ 12 층 13 층",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt8928h6-n0gi",
+      "type": "note",
+      "genre": "その他",
+      "date": "2026-08-25",
+      "when": "",
+      "time": "12:00",
+      "title": "レーザー",
+      "place": "",
       "mapQuery": "",
       "url": "",
       "tel": "",
