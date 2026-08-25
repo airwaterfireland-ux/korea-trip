@@ -1,6 +1,6 @@
 {
-  "version": 36,
-  "updatedAt": "2026-08-24T06:53:42.381Z",
+  "version": 37,
+  "updatedAt": "2026-08-25T05:40:30.208Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -228,9 +228,9 @@
       "id": "wish-onion",
       "type": "food",
       "genre": "カフェ",
-      "date": "2026-08-19",
+      "date": "2026-08-18",
       "when": "",
-      "time": "16:00",
+      "time": "17:00",
       "title": "ONION 聖水（어니언 성수）",
       "place": "城東区 聖水洞（本店）",
       "mapQuery": "어니언 성수",
