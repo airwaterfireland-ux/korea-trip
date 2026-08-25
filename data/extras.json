@@ -1,6 +1,6 @@
 {
-  "version": 44,
-  "updatedAt": "2026-08-25T05:52:39.061Z",
+  "version": 45,
+  "updatedAt": "2026-08-25T05:53:37.320Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -561,6 +561,20 @@
       "url": "",
       "tel": "",
       "memo": "alo とか"
+    },
+    {
+      "id": "extra-mt891kfw-b30m",
+      "type": "food",
+      "genre": "カフェ",
+      "date": "2026-08-25",
+      "when": "",
+      "time": "09:00",
+      "title": "Beton",
+      "place": "서울특별시 강남구 테헤란로44길 ８ 12 층 13 층",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
     }
   ]
 }
