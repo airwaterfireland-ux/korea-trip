@@ -1,6 +1,6 @@
 {
-  "version": 47,
-  "updatedAt": "2026-08-25T05:54:31.712Z",
+  "version": 48,
+  "updatedAt": "2026-08-26T05:20:50.255Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -599,6 +599,20 @@
       "time": "10:00",
       "title": "仕事",
       "place": "",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt9nb93p-30up",
+      "type": "food",
+      "genre": "焼肉",
+      "date": "2026-08-25",
+      "when": "",
+      "time": "20:00",
+      "title": "牛家",
+      "place": "서울특별시 강남구 강남대로 ６５２, Sinsa Square, G층",
       "mapQuery": "",
       "url": "",
       "tel": "",
