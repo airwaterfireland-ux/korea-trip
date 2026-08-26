@@ -1,6 +1,6 @@
 {
-  "version": 49,
-  "updatedAt": "2026-08-26T05:38:43.491Z",
+  "version": 50,
+  "updatedAt": "2026-08-26T05:40:43.160Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -627,6 +627,20 @@
       "time": "14:00",
       "title": "etrebakehouse",
       "place": "서울특별시 성동구 연무장길 ３７−５",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt9o0tga-eq33",
+      "type": "food",
+      "genre": "",
+      "date": "2026-08-26",
+      "when": "",
+      "time": "13:00",
+      "title": "You need my yogurt sinsa",
+      "place": "서울특별시 강남구 강남대로162길 ２７−６",
       "mapQuery": "",
       "url": "",
       "tel": "",
