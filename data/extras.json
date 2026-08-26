@@ -1,6 +1,6 @@
 {
-  "version": 48,
-  "updatedAt": "2026-08-26T05:20:50.255Z",
+  "version": 49,
+  "updatedAt": "2026-08-26T05:38:43.491Z",
   "events": [
     {
       "id": "extra-nudake",
@@ -613,6 +613,20 @@
       "time": "20:00",
       "title": "牛家",
       "place": "서울특별시 강남구 강남대로 ６５２, Sinsa Square, G층",
+      "mapQuery": "",
+      "url": "",
+      "tel": "",
+      "memo": ""
+    },
+    {
+      "id": "extra-mt9ny94g-uwje",
+      "type": "food",
+      "genre": "カフェ",
+      "date": "2026-08-26",
+      "when": "",
+      "time": "14:00",
+      "title": "etrebakehouse",
+      "place": "서울특별시 성동구 연무장길 ３７−５",
       "mapQuery": "",
       "url": "",
       "tel": "",
